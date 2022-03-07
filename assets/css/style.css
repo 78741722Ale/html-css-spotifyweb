@@ -19,10 +19,10 @@ body {
 /* CONCLUSA */
 /*#region Palette colori blocchi */
 :root {
-  --BodyColor_try: transparent;
-  --MainColor_try: rgb(128, 51, 0);
-  --HeaderColor_try: Yellow;
-  --FooterColor_try: lime;
+  --BodyColor_try: ;
+  --MainColor_try: ;
+  --HeaderColor_try: ;
+  --FooterColor: rgba(40, 40, 40, 1);
 }
 
 /* Colori container di prova */
@@ -79,7 +79,7 @@ body {
 }
 
 #site_footer {
-  background-color: orange;
+  background-color: var(--FooterColor);
   width: var(--Footer_MW_set);
   height: var(--Footer_H_set);
 }
@@ -193,9 +193,89 @@ body {
     width: var(--Logo_MW_set);
 }
 
+.track_img,
+.track_name,
+.track_icons {
+    height: 100%;
+    background-color: brown;
+}
+
+.track_img {
+    padding: 0px 5px 0px 5px;
+    width: 35%;
+}
+
+.track_img img {
+    max-width: 100%;
+    width: auto;
+    height: 70%;
+}
+
+.track_name {
+    width: 35%;
+}
+
+.track_name h4 {
+    color: rgb(255,255,255);
+    font-size: 0.75rem;
+}
+
+.track_name span {
+    color: rgba(134, 134, 134, 1);
+    font-size: 0.6rem;
+}
+
+.track_icons {
+    width: 30%;
+}
+
+
+/*#region del Media Player */
+
 .status {
     width: 600px;
+    flex-wrap: wrap;
 }
+/* Player e sue icone */
+
+.player {
+    width: 45%;
+    height: 50%;
+    gap: 1.25rem;
+}
+
+.player a {
+    font-size: 1.15rem;
+    text-decoration: none;
+    color: rgb(255,255,255);
+}
+
+.slider {
+    width: 100%;
+    height: 50%;
+}
+
+.t_left
+.minute
+.t_right {
+    max-height: 100%;
+}
+.t_left,
+.t_right {
+    width: 15%;
+    font-size: 0.6rem;
+    color: rgb(255,255,255);
+}
+
+.minute {
+    width: 60%;
+}
+.minute input {
+    width: 100%;
+    cursor:all-scroll;
+}
+
+/*#endregion */
 
 .enter {
     width: var(--Logo_MW_set);

@@ -14,8 +14,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&display=swap" rel="stylesheet">
+    <!-- Link a font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
-
 <body>
 
     <!-- /#site_header -->
@@ -23,7 +26,7 @@
         <div class="logo d_flex flex_row justify_c align-c">A</div>
         <div class="call_to_action d_flex flex_row justify_c align-c">A</div>
     </div>
-    
+
     <!-- /#site_content -->
     <div id="site_content">
         <!-- Sidebar -->
@@ -36,8 +39,8 @@
                 <div class="play"></div>
             </div>
             <!-- /.account -->
-            <div class="account rel_bottom"></div>       
-        </div>   
+            <div class="account rel_bottom"></div>
+        </div>
 
         <!-- Main -->
         <div class="flex_column align-c" id="site_main">
@@ -77,20 +80,55 @@
                         <div class="item"></div>
                     </div>
                 </div>
-            </div>           
+            </div>
         </div>
     </div>
 
     <!-- /#site_footer -->
     <div class="d_flex flex_row justify_sb" id="site_footer">
         <!-- Traccia e cartella dedicata -->
-        <div class="track"></div>
+        <div class="track d_flex flex_row justify_c align-c">
+            <!-- /.track_img -->
+            <div class="track_img d_flex flex_row justify_c align-c">
+                <img src="./img/sinister.jpeg" alt="">
+            </div>
+            <!-- /.track_name -->
+            <div class="track_name d_flex flex_column align_start justify_c">
+                <h4>Sinister</h4>
+                <span>Brano Nome</span>
+            </div>
+            <!-- /.track_icons -->
+            <div class="track_icons"></div>   
+        </div>
         <!-- Stato del brano -->
-        <div class="status"></div>
+        <div class="status d_flex flex_row justify_c align-c">
+            <!-- Media Player con sue icone -->
+            <div class="player d_flex flex_row justify_c align-c">
+                <a href="#"><i class="fa-solid fa-shuffle"></i></a>
+                <a href="#"><i class="fa-solid fa-backward-step"></i></a>
+                <a style="font-size: 2rem;" href="#"><i class="fa-regular fa-circle-play"></i></a>
+                <a href="#"><i class="fa-solid fa-forward-step"></i></a>
+                <a href="#"><i class="fa-solid fa-arrow-rotate-right"></i></a>
+            </div>
+            <!-- Slider col Tempo -->
+            <div class="slider d_flex flex_row justify_c align-c">
+                <!-- Tempo a SX -->
+                <div class="t_left d_flex justify_c">
+                    0:25
+                </div>
+                <!-- Slider del minuto brano -->
+                <div class="minute d_flex justify_c">
+                    <input type="range" min="1" max="100" value="30">
+                </div>         
+                <!-- Tempo a DX -->
+                <div class="t_right d_flex justify_c">
+                    4:35
+                </div>               
+            </div>
+            <!--  -->
+        </div>
         <!-- Volume brano ed entertainment -->
         <div class="enter"></div>
-        
-
     </div>
 </body>
 
