@@ -1,22 +1,23 @@
-
 /* CONCLUSA */
 /*#region Generale */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: var(--BodyColor_try);
-    font-family: 'Montserrat', sans-serif;   
+  background-color: var(--BodyColor_try);
+  font-family: "Montserrat", sans-serif;
+  /* Per centrare container principale con Griglia */
+  display: flex;
+  justify-content: center;
 }
 
 /*#endregion */
 
 /* CONCLUSA */
 /*#region Palette colori blocchi */
-
 :root {
   --BodyColor_try: transparent;
   --MainColor_try: rgb(128, 51, 0);
@@ -28,17 +29,50 @@ body {
 :root {
   --Colonne_Float: lime;
   --Colonne_Flex: Yellow;
-  --Colonne_Grid:(255, 115, 0);
+  --Colonne_Grid: (255, 115, 0);
 }
 
 /*#endregion */
 
 /*#region CSS-GRID */
+.container {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: 20vh 80vh;
+  grid-template-rows: 10vh 80vh 10vh;
+  grid-template-areas:
+    "header header header"
+    "sidebar content-1 content-1"
+    "footer footer footer";
+}
+/* item principale per ogni classe */
+.item {
+  background-color: #1eaafc;
+  border: 1px solid #171717;
+  /* Proprietà per gli oggetti interni all'item */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Proprietà estetiche per gli oggetti interni all'item */
+  font-size: 18px;
+  font-weight: bold;
+}
 
 
-
+/* Header */
+.header {
+  grid-area: header;
+}
+/* Sidebar */
+.sidebar {
+  grid-area: sidebar;
+}
+.content-1 {
+  grid-area: content-1;
+}
+.footer {
+  grid-area: footer;
+}
 
 /*#endregion*/
-
-
-
