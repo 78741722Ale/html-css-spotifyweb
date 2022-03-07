@@ -10,8 +10,8 @@ body {
   background-color: var(--BodyColor_try);
   font-family: "Montserrat", sans-serif;
   /* Per centrare container principale con Griglia */
-  display: flex;
-  justify-content: center;
+  width: var(--Body_MW_set);
+  height: var(--Body_H_set);
 }
 
 /*#endregion */
@@ -34,34 +34,61 @@ body {
 
 /*#endregion */
 
-/*#region CSS-GRID */
-.container {
-  display: grid;
-  width: 100%;
-  height: 100vh;
-  grid-template-columns: 200px 80vh;
-  grid-template-rows: 100px calc(100% - 200px) 100px;
-  grid-template-areas:
-    "header header header"
-    "sidebar main main"
-    "footer footer footer";
+/* CONCLUSA */
+/*#region dimensioni */
+
+/* Dimensioni principali del corpo */
+:root {
+  --Body_MW_set: 100vw;
+  --Body_H_set: 100vh;
+  --Header_W100_set: 100%;
+  --Header_MW_set: 100%;
+  --Header_H_set: 100px;
+  --Content_MW_set: 100%;
+  --Content_H_set: calc(100vh - 200px);
+  --Sidebar_MW_set : 30%;
+  --Sidebar_H_set : calc(100vh - 200px);
+  --Main_MW_set : 70%;
+  --Main_H_set : calc(100vh - 200px);
+  --Footer_W100_set: 100%;
+  --Footer_MW_set: 100%;
+  --Footer_H_set: 100px;
 }
 
-/* Header */
-.header {
-  grid-area: header;
+#site_header {
+   background-color: aqua; 
+  width: var(--Header_MW_set);
+  height: var(--Header_H_set);
 }
-/* Sidebar */
-.sidebar {
-  grid-area: sidebar;
+
+#site_content {
+    display: flex;
+    flex-direction: row;
+background-color: purple; 
+  width: var(--Content_MW_set);
+  height: var(--Content_H_set);
 }
-/* Main content */
-.main {
-  grid-area: main;
+
+#site_sidebar {
+    background-color: red; 
+    width: var(--Sidebar_MW_set);
+    height: var(--Sidebar_H_set);
 }
-/* Footer */
-.footer {
-  grid-area: footer;
+
+#site_main {
+    background-color: blue; 
+    width: var(--Main_MW_set);
+    height: var(--Main_H_set);
 }
+
+#site_footer {
+    background-color: orange; 
+  width: var(--Header_MW_set);
+  height: var(--Header_H_set);
+}
+
+/*#endregion*/
+
+/*#region CSS-FLEX */
 
 /*#endregion*/

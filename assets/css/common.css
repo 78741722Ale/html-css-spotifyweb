@@ -1,12 +1,2 @@
 /* Regola in comune per il flex */
 
-.header,
-.sidebar,
-.main,
-.footer {
-  background-color: #1eaafc;
-  border: 1px solid #171717;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
