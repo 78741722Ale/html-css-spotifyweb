@@ -15,7 +15,6 @@ body {
 
 /*#endregion */
 
-/* CONCLUSA */
 /*#region Palette colori blocchi */
 :root {
   --BodyColor_try: ;
@@ -123,30 +122,50 @@ body {
     text-decoration: none;
     color: white;
 }
-
 /*#endregion*/
 
 /*#region sidebar */
-
 .main_sidebar {
   height: var(--Main_Side_H_set);
 }
 
-.play {
-  height: 75%;
-}
-
+/* Container sotto al logo */
 .home {
   height: 25%;
 }
 
-.home a,
-.play a,
-.play h4{
-    padding: 0px 0px 0px 15px;
-    text-transform: none;
+/* Container per la playlist */
+
+.play {
+  height: 75%;
+}
+.play_title,
+.new_play,
+.names_play {
+  width: 100%;
+}
+.play_title {
+  height: 10%;
+}
+.new_play {
+  height: 20%;
+}
+.names_play {
+  height: 70%;
 }
 
+.new_play i,
+.new_play span {
+  color:rgba(134, 134, 134, 1);
+}
+
+.new_play i {
+  font-size: 2.75rem;
+}
+
+.new_play span {
+  font-weight: bold;
+}
 
 .account {
   height: 75px;

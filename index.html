@@ -17,15 +17,20 @@
     <!-- Link a font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+    <!-- primo controllo - 07/03 -->
+    <!-- Document checking completed. No errors or warnings to show. -->
+
 <body>
     <!-- DA SISTEMARE -->
     <!-- /#site_header -->
     <div class="flex_row justify_sb" id="site_header">
+        <!-- Logo spotify sulla Sidebar -->
         <div class="logo d_flex flex_row justify_start align-c">
             <img class="logo_img ml-20" src="./img/logo.svg" alt="Logo di Spotify">
         </div>
+        <!-- Pulsante per effettuare Upgrade -->
         <div class="call_to_action d_flex flex_row justify_c align-c">
             <a href="#"> Effettua l'upgrade </a>
         </div>
@@ -33,33 +38,48 @@
 
     <!-- /#site_content -->
     <div id="site_content">
-        <!-- Sidebar -->
+        <!-- Container per la Sidebar -->
         <div class="d_flex flex_column justify_sb" id="site_sidebar">
-            <!-- /.main_sidebar -->
+            <!-- Contenuto superiore, playlist + home -->
             <div class="main_sidebar d_float clearfix">
                 <!-- /.home -->
-                <div class="home fs_small pt_10 gap flex_column d_flex justify_start align_start">
+                <div class="home fs_small pt_10 ml-10 gap flex_column d_flex justify_start align_start">
                     <a class="ancor_t" href="#"><i class="fa-solid fa-house pr_5"></i>Home</a>
                     <a class="ancor_t" href="#"><i class="fa-solid fa-magnifying-glass pr_5"></i>Cerca</a>
                     <a class="ancor_t" href="#"><i class="fa-solid fa-book-open pr_5"></i>La tua libreria</a>
                 </div>
                 <!-- /.play -->
-                <div class="play fs_small pt_10 gap flex_column d_flex justify_start align_start">
-                    
-
-
-                    
+                <div class="play fs_small ml-10 flex_column d_flex justify_start align_start">
+                    <!-- Titolo della playlist -->
+                    <div class="play_title flex_column d_flex justify_c ">
+                        <h4 style="color: rgb(255, 255, 255);" class="pl_15 pt_10">PLAYLIST</h4>
+                    </div>
+                    <!-- Nuova Playlist - Crea playlist-->
+                    <div class="new_play d_flex flex_row justify_start align-c">
+                        <a class="pl_15" href="#"><i class="fa-solid fa-square-plus"></i></a>
+                        <span class="pl_10">Crea Playlist</span>
+                    </div>
+                    <!-- nuovi nomi per playlist -->
+                    <div class="names_play gap_md pt_10 d_flex flex_column justify_start align_start">
+                        <a class="ancor_t" href="#">Nome Playlist</a>
+                        <a class="ancor_t" href="#">Nome Playlist</a>
+                        <a class="ancor_t" href="#">Nome Playlist</a>
+                        <a class="ancor_t" href="#">Nome Playlist</a>
+                        <a class="ancor_t" href="#">Nome Playlist</a>
+                        <a class="ancor_t" href="#">Nome Playlist</a>
+                        <a class="ancor_t" href="#">Nome Playlist</a>
+                    </div>
                 </div>
             </div>
-            <!-- /.account -->
+            <!-- Contenuto lato inferiore della sidebar -->
             <div class="account rel_bottom"></div>
         </div>
 
         <!-- Main -->
         <div class="flex_column align-c" id="site_main">
-            <!-- /.navbar -->
+            <!-- navbar superiore -->
             <div class="navbar mb-20"></div>
-            <!-- /.cards-items -->
+            <!-- Brani musicali - Container -->
             <div class="container_cards d_flex flex_column align_start">
                 <!-- /.cards - Recently Played -->
                 <div class="cards mb-30 align-c d_float clearfix">
@@ -115,7 +135,7 @@
             <div class="track_icons d_flex flex_row align-c justify_end">
                 <a class="ancor_t" href="#"><i class="fa-regular fa-heart"></i></a>
                 <a class="ancor_t" href="#"><i class="fa-solid fa-folder"></i></a>
-            </div>   
+            </div>
         </div>
         <!-- Stato del brano -->
         <div class="status d_flex flex_row justify_c align-c">
@@ -136,11 +156,11 @@
                 <!-- Slider del minuto brano -->
                 <div class="minute d_flex justify_c">
                     <input type="range" min="1" max="100" value="30">
-                </div>         
+                </div>
                 <!-- Tempo a DX -->
                 <div class="t_right d_flex justify_c">
                     4:35
-                </div>               
+                </div>
             </div>
             <!--  -->
         </div>
