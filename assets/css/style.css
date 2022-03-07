@@ -1,0 +1,44 @@
+
+/* CONCLUSA */
+/*#region Generale */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--BodyColor_try);
+    font-family: 'Montserrat', sans-serif;   
+}
+
+/*#endregion */
+
+/* CONCLUSA */
+/*#region Palette colori blocchi */
+
+:root {
+  --BodyColor_try: transparent;
+  --MainColor_try: rgb(128, 51, 0);
+  --HeaderColor_try: Yellow;
+  --FooterColor_try: lime;
+}
+
+/* Colori container di prova */
+:root {
+  --Colonne_Float: lime;
+  --Colonne_Flex: Yellow;
+  --Colonne_Grid:(255, 115, 0);
+}
+
+/*#endregion */
+
+/*#region CSS-GRID */
+
+
+
+
+/*#endregion*/
+
+
+
