@@ -46,49 +46,94 @@ body {
   --Header_H_set: 100px;
   --Content_MW_set: 100%;
   --Content_H_set: calc(100vh - 200px);
-  --Sidebar_MW_set : 30%;
-  --Sidebar_H_set : calc(100vh - 200px);
-  --Main_MW_set : 70%;
-  --Main_H_set : calc(100vh - 200px);
+  --Sidebar_MW_set: 200px;
+  --Sidebar_H_set: calc(100vh - 200px);
+  --Main_MW_set: calc(100vw - 200px);
+  --Main_H_set: calc(100vh - 200px);
   --Footer_W100_set: 100%;
   --Footer_MW_set: 100%;
   --Footer_H_set: 100px;
+  --Logo_MW_set: 200px;
+  --Logo_H_set: 100px;
 }
 
 #site_header {
-   background-color: aqua; 
+  background-color: aqua;
   width: var(--Header_MW_set);
   height: var(--Header_H_set);
 }
 
 #site_content {
-    display: flex;
-    flex-direction: row;
-background-color: purple; 
+  display: flex;
+  flex-direction: row;
+  background-color: purple;
   width: var(--Content_MW_set);
   height: var(--Content_H_set);
 }
 
 #site_sidebar {
-    background-color: red; 
-    width: var(--Sidebar_MW_set);
-    height: var(--Sidebar_H_set);
+  position: relative;
+  background-color: red;
+  width: var(--Sidebar_MW_set);
+  height: var(--Sidebar_H_set);
 }
 
 #site_main {
-    background-color: blue; 
-    width: var(--Main_MW_set);
-    height: var(--Main_H_set);
+  background-color: blue;
+  width: var(--Main_MW_set);
+  height: var(--Main_H_set);
 }
 
 #site_footer {
-    background-color: orange; 
-  width: var(--Header_MW_set);
-  height: var(--Header_H_set);
+  background-color: orange;
+  width: var(--Footer_MW_set);
+  height: var(--Footer_H_set);
 }
 
 /*#endregion*/
 
 /*#region CSS-FLEX */
+
+.logo {
+  background-color: lightgray;
+  width: var(--Logo_MW_set);
+  height: var(--Logo_H_set);
+}
+
+.call_to_action {
+  background-color: lightgray;
+  width: var(--Logo_MW_set);
+  height: var(--Logo_H_set);
+}
+
+.main_sidebar {
+  height: 300px;
+  float: left;
+  position: relative;
+}
+
+.play {
+  height: 60%;
+}
+
+.home {
+  height: 40%;
+}
+
+.account {
+  height: 75px;
+}
+
+.main_sidebar,
+.account {
+  width: 100%;
+  background-color: blueviolet;
+}
+
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: table;
+}
 
 /*#endregion*/
