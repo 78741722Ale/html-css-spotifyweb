@@ -23,8 +23,12 @@
 
     <!-- /#site_header -->
     <div class="flex_row justify_sb" id="site_header">
-        <div class="logo d_flex flex_row justify_c align-c">A</div>
-        <div class="call_to_action d_flex flex_row justify_c align-c">A</div>
+        <div class="logo d_flex flex_row justify_start align-c">
+            <img class="logo_img ml-20" src="./img/logo.svg" alt="Logo di Spotify">
+        </div>
+        <div class="call_to_action d_flex flex_row justify_c align-c">
+            <a href="#"> Effettua l'upgrade </a>
+        </div>
     </div>
 
     <!-- /#site_content -->
@@ -84,6 +88,7 @@
         </div>
     </div>
 
+    <!-- DA SISTEMARE -->
     <!-- /#site_footer -->
     <div class="d_flex flex_row justify_sb" id="site_footer">
         <!-- Traccia e cartella dedicata -->
@@ -98,12 +103,15 @@
                 <span>Brano Nome</span>
             </div>
             <!-- /.track_icons -->
-            <div class="track_icons"></div>   
+            <div class="track_icons d_flex flex_row align-c justify_end">
+                <a class="ancor_t" href="#"><i class="fa-regular fa-heart"></i></a>
+                <a class="ancor_t" href="#"><i class="fa-solid fa-folder"></i></a>
+            </div>   
         </div>
         <!-- Stato del brano -->
         <div class="status d_flex flex_row justify_c align-c">
             <!-- Media Player con sue icone -->
-            <div class="player d_flex flex_row justify_c align-c">
+            <div class="player pt_10 d_flex flex_row justify_c align-c">
                 <a href="#"><i class="fa-solid fa-shuffle"></i></a>
                 <a href="#"><i class="fa-solid fa-backward-step"></i></a>
                 <a style="font-size: 2rem;" href="#"><i class="fa-regular fa-circle-play"></i></a>
@@ -128,7 +136,18 @@
             <!--  -->
         </div>
         <!-- Volume brano ed entertainment -->
-        <div class="enter"></div>
+        <div class="enter d_flex flex_row justify_c align-c">
+            <!-- Icone di trasmissione a monitor e a volume -->
+            <div class="enter_icons d_flex flex_row justify_se align-c">
+                <a class="ancor_t" href="#"><i class="fa-solid fa-list"></i></a>
+                <a class="ancor_t" href="#"><i class="fa-solid fa-desktop"></i></a>
+                <a class="ancor_t" href="#"><i class="fa-solid fa-volume-high"></i></a>
+            </div>
+            <!-- Barra del volume -->
+            <div class="enter_vol d_flex flex_row justify_c align-c">
+                <input type="range" min="1" max="100" value="30">
+            </div>
+        </div>
     </div>
 </body>
 
