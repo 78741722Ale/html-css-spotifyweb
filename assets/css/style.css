@@ -41,20 +41,16 @@ body {
 :root {
   --Body_MW_set: 100vw;
   --Body_H_set: 100vh;
-  --Header_W100_set: 100%;
   --Header_MW_set: 100%;
-  --Header_H_set: 100px;
+  --Header_H_set: 80px;
   --Content_MW_set: 100%;
-  --Content_H_set: calc(100vh - 200px);
+  --Content_H_set: calc(100% - 160px);
   --Sidebar_MW_set: 200px;
-  --Sidebar_H_set: calc(100vh - 200px);
-  --Main_MW_set: calc(100vw - 200px);
-  --Main_H_set: calc(100vh - 200px);
-  --Footer_W100_set: 100%;
+  --Sidebar_H_set: calc(100vh - 160px);
+  --Main_MW_set: calc(100% - 200px);
+  --Main_H_set: 100%;
   --Footer_MW_set: 100%;
-  --Footer_H_set: 100px;
-  --Logo_MW_set: 200px;
-  --Logo_H_set: 100px;
+  --Footer_H_set: 80px;
 }
 
 #site_header {
@@ -64,8 +60,6 @@ body {
 }
 
 #site_content {
-  display: flex;
-  flex-direction: row;
   background-color: purple;
   width: var(--Content_MW_set);
   height: var(--Content_H_set);
@@ -90,9 +84,25 @@ body {
   height: var(--Footer_H_set);
 }
 
+/* Dimensioni dei container */
+:root {
+  --Logo_MW_set: 200px;
+  --Logo_H_set: 80px;
+  --Navbar_MW_set: 65%;
+  --Navbar_H_set: 50px;
+  --Container_cards : 95%;
+  --Container_H_set : 900px;
+  --Cards_MW_set: 100%;
+  --Cards_H_set: 300px;
+  --Main_Side_MW_set: 100%;
+  --Main_Side_H_set: 400px;
+  --Item_MW_set: 300px;
+  --Item_H_set: 100%;
+}
+
 /*#endregion*/
 
-/*#region CSS-FLEX */
+/*#region Header */
 
 .logo {
   background-color: lightgray;
@@ -106,10 +116,12 @@ body {
   height: var(--Logo_H_set);
 }
 
+/*#endregion*/
+
+/*#region sidebar */
+
 .main_sidebar {
-  height: 300px;
-  float: left;
-  position: relative;
+  height: var(--Main_Side_H_set);
 }
 
 .play {
@@ -124,16 +136,71 @@ body {
   height: 75px;
 }
 
-.main_sidebar,
-.account {
-  width: 100%;
-  background-color: blueviolet;
-}
-
-.clearfix::after {
-  clear: both;
-  content: "";
-  display: table;
+.main_sidebar{
+  width: var(--Main_Side_MW_set);
 }
 
 /*#endregion*/
+
+/*#region Main content */
+
+.navbar {
+  background-color: lime;
+  width: var(--Navbar_MW_set);
+  height: var(--Navbar_H_set);
+}
+
+.container_cards {
+    width: var(--Container_cards);
+    height: var(--Container_H_set);
+    background-color: darkgoldenrod;
+}
+
+.cards {
+  background-color: blueviolet;
+  width: var(--Cards_MW_set);
+  height: var(--Cards_H_set);
+}
+
+.cards_2 {
+  background-color: blueviolet;
+  width: max-content;
+  height: var(--Cards_H_set);
+}
+
+.cards_title {
+  width: 100%;
+  background-color: bisque;
+  height: 20%;
+}
+
+.cards_items {
+  width: 100%;
+  height: 80%;
+  background-color: burlywood;
+}
+
+.item {
+  width: var(--Item_MW_set);
+  height: var(--Item_H_set);
+  background-color: brown;
+}
+/*#endregion*/
+
+/*#region Footer */
+
+.track {
+    width: var(--Logo_MW_set);
+}
+
+.status {
+    width: 600px;
+}
+
+.enter {
+    width: var(--Logo_MW_set);
+}
+
+
+/*#endregion Footer */
+
