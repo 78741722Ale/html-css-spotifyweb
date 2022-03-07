@@ -133,12 +133,20 @@ body {
 }
 
 .play {
-  height: 60%;
+  height: 75%;
 }
 
 .home {
-  height: 40%;
+  height: 25%;
 }
+
+.home a,
+.play a,
+.play h4{
+    padding: 0px 0px 0px 15px;
+    text-transform: none;
+}
+
 
 .account {
   height: 75px;
