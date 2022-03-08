@@ -19,8 +19,8 @@ body {
 :root {
   --BodyColor_try: ;
   --MainColor_try: ;
-  --SidebarColor:rgba(0, 0, 0, 1);
-  --HeaderColor:rgba(8, 11, 18, 1);
+  --SidebarColor: rgba(0, 0, 0, 1);
+  --HeaderColor: rgba(8, 11, 18, 1);
   --FooterColor: rgba(40, 40, 40, 1);
 }
 
@@ -82,8 +82,8 @@ body {
   --Logo_H_set: 80px;
   --Navbar_MW_set: 65%;
   --Navbar_H_set: 50px;
-  --Container_cards : 95%;
-  --Container_H_set : 900px;
+  --Container_cards: 95%;
+  --Container_H_set: 900px;
   --Cards_MW_set: 100%;
   --Cards_H_set: 300px;
   --Main_Side_MW_set: 100%;
@@ -94,6 +94,7 @@ body {
 
 /*#endregion*/
 
+/* CONCLUSA */
 /*#region Header */
 
 .logo {
@@ -103,9 +104,9 @@ body {
 }
 
 .logo_img {
-    max-width: 55%;
-    width: auto;
-    height: 100%;
+  max-width: 55%;
+  width: auto;
+  height: 100%;
 }
 
 .call_to_action {
@@ -114,16 +115,17 @@ body {
 }
 
 .call_to_action a {
-    padding: 10px 25px 10px 25px;
-    border: 0.3px solid white;
-    border-radius: 25px;
-    text-transform: uppercase;
-    font-size: 0.8rem;
-    text-decoration: none;
-    color: white;
+  padding: 10px 25px 10px 25px;
+  border: 0.3px solid white;
+  border-radius: 25px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: white;
 }
 /*#endregion*/
 
+/* CONCLUSA */
 /*#region sidebar */
 .main_sidebar {
   height: var(--Main_Side_H_set);
@@ -156,7 +158,7 @@ body {
 
 .new_play i,
 .new_play span {
-  color:rgba(134, 134, 134, 1);
+  color: rgba(134, 134, 134, 1);
 }
 
 .new_play i {
@@ -171,12 +173,13 @@ body {
   height: 75px;
 }
 
-.main_sidebar{
+.main_sidebar {
   width: var(--Main_Side_MW_set);
 }
 
 /*#endregion*/
 
+/* DA CONCLUDERE */
 /*#region Main content */
 
 .navbar {
@@ -186,9 +189,9 @@ body {
 }
 
 .container_cards {
-    width: var(--Container_cards);
-    height: var(--Container_H_set);
-    background-color: darkgoldenrod;
+  width: var(--Container_cards);
+  height: var(--Container_H_set);
+  background-color: darkgoldenrod;
 }
 
 .cards {
@@ -222,53 +225,53 @@ body {
 }
 /*#endregion*/
 
-/* DA CONCLUDERE */
+/* DA CONCLUDERE - SISTEMARE INPUT VOLUME E STATO TRACCIA */
 /*#region Footer */
 
 /*#region Track - a Sinistra del Footer */
 
 .track {
-    width: var(--Logo_MW_set);
+  width: var(--Logo_MW_set);
 }
 
 .track_img,
 .track_name,
 .track_icons {
-    height: 100%;
+  height: 100%;
 }
 
 .track_img {
-    padding: 0px 5px 0px 5px;
-    width: 35%;
+  padding: 0px 5px 0px 5px;
+  width: 35%;
 }
 
 .track_img img {
-    max-width: 100%;
-    width: auto;
-    height: 70%;
+  max-width: 100%;
+  width: auto;
+  height: 70%;
 }
 
 .track_name {
-    width: 35%;
+  width: 35%;
 }
 
 .track_name h4 {
-    color: rgb(255,255,255);
-    font-size: 0.75rem;
+  color: rgb(255, 255, 255);
+  font-size: 0.75rem;
 }
 
 .track_name span {
-    color: rgba(134, 134, 134, 1);
-    font-size: 0.6rem;
+  color: rgba(134, 134, 134, 1);
+  font-size: 0.6rem;
 }
 
 .track_icons {
-    gap: 0.35rem;
-    width: 30%;
+  gap: 0.35rem;
+  width: 30%;
 }
 
 .track_icons a {
-    padding: 0px 5px 0px 0px;
+  padding: 0px 5px 0px 0px;
 }
 
 /*#endregion */
@@ -276,63 +279,60 @@ body {
 /*#region del Media Player */
 
 .status {
-    width: 800px;
-    flex-wrap: wrap;
+  width: 800px;
+  flex-wrap: wrap;
 }
 
 /* Player e sue icone */
 .player {
-    width: 45%;
-    height: 50%;
-    gap: 1.25rem;
+  width: 45%;
+  height: 50%;
+  gap: 1.25rem;
 }
 .player a {
-    font-size: 1.15rem;
-    text-decoration: none;
-    color: rgb(255,255,255);
+  font-size: 1.15rem;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
 }
 .slider {
-    width: 100%;
-    height: 50%;
+  width: 100%;
+  height: 50%;
 }
-.t_left
-.minute
-.t_right {
-    max-height: 100%;
+.t_left .minute .t_right {
+  max-height: 100%;
 }
 .t_left,
 .t_right {
-    width: 15%;
-    font-size: 0.7rem;
-    color: rgb(255,255,255);
+  width: 15%;
+  font-size: 0.7rem;
+  color: rgb(255, 255, 255);
 }
 
 .minute {
-    width: 60%;
+  width: 60%;
 }
 .minute input {
-    width: 100%;
-    cursor:all-scroll;
+  width: 100%;
+  cursor: all-scroll;
 }
 
 /*#endregion */
 
 /*#region Sezione entertainmente */
 .enter {
-    width: var(--Logo_MW_set);
+  width: var(--Logo_MW_set);
 }
 
 .enter_icons,
 .enter_vol {
-   width: 50%;
-   height: 100%; 
+  width: 50%;
+  height: 100%;
 }
 
 .enter_vol input {
-    width: 90%;
-    cursor:all-scroll;
+  width: 90%;
+  cursor: all-scroll;
 }
 /*#endregion*/
 
 /*#endregion Footer */
-
