@@ -24,7 +24,7 @@
     <!-- Site_Main Content -->
     <div class="Wrapper clearfix">
         <!-- Sidebar Laterale del Sito Web -->
-        <aside class="d_float">
+        <aside class="d_float clearfix">
             <!-- Logo spotify sulla Sidebar -->
             <div class="logo d_flex flex_row justify_start align-c">
                 <img class="logo_img ml-10" src="./img/logo.svg" alt="Logo di Spotify">
@@ -72,13 +72,13 @@
         </aside>
 
         <!-- Main principale del sito con Header e Cards -->
-        <main class="d_float">
+        <main class="d_float clearfix">
             <!-- Site_header -->
             <header class="d_flex flex_row justify_end align-c">
                 <a class="mr_15" href="#"> Effettua l'upgrade </a>
             </header>
             <!-- Site_Card -->
-            <div class="Cards d_flex flex_column  align-c">
+            <div class="Cards d_flex flex_column align-c">
                 <!-- navbar superiore -->
                 <div class="navbar fs_small mb-20 d_flex flex_column align-c justify_c flex_wrap">
                     <ul>
@@ -90,84 +90,114 @@
                         <li><a class="ancor_t" href="#">Scopri</a></li>
                     </ul>
                 </div>
-                <!-- Cards - Recently Played -->
-                <div class="cards_items mb-30 d_float clearfix">
-                    <!-- /.cards_title -->
-                    <div class="cards_title d_flex align-c">
+                <!-- Container di Tutte le Cards -->
+                <div class="content d_float clearfix ">
+                    <!-- Recently Played -->
+                    <div class="content_title d_flex align-c">
                         <h2 class="light">Recently Played</h2>
                     </div>
-                    <!-- Cards Photo - Album copertina -->
-                    <div class="cards_photo d_flex align-c justify_start">
-                        <!-- Heavy Metal -->
-                        <div class="album d_float clearfix mr_15">
-                            <!-- Immagine Album -->
-                            <div class="Photo d_flex justify_c align-c mb-10">
-                                <img src="./img/metal_lifting.jpg" alt="Album Heavy Metal">
-                                <!-- Tasto play -->
-                                <span class="abs"><i class="fa-regular fa-circle-play"></i></span>
-                            </div>
-                            <h4 class="mb-10">Heavy Metal</h4>
-                            <span class="fs_usmall">Subtitle</span>
-                        </div>
-                        <!-- Stranger Things -->
-                        <div class="album d_float clearfix mr_15">
-                            <!-- Immagine Album -->
-                            <div class="Photo d_flex justify_c align-c mb-10">
-                                <img src="./img/stranger.jpeg" alt="Stranger Things">
-                                <!-- Tasto play -->
-                                <span class="abs"><i class="fa-regular fa-circle-play"></i></span>
-                            </div>
-                            <h4 class="mb-10">Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h4>
-                            <span class="fs_usmall">Kyle Dixon & Michael Stein</span>
-                        </div>
-                        <!-- A quiet Place -->
-                        <div class="album d_float clearfix mr_15">
-                            <!-- Immagine Album -->
-                            <div class="Photo d_flex justify_c align-c mb-10">
-                                <img src="./img/aquietplace.jpeg" alt="A quiet place">
-                                <!-- Tasto play -->
-                                <span class="abs"><i class="fa-regular fa-circle-play"></i></span>
-                            </div>
-                            <h4 class="mb-10">A quiet Place</h4>
-                            <span class="fs_usmall">Subtitle</span>
-                        </div>
-                        <!-- Split -->
-                        <div class="album d_float clearfix mr_15">
-                            <!-- Immagine Album -->
-                            <div class="Photo d_flex justify_c align-c mb-10">
-                                <img src="./img/split.jpeg" alt="Album Split">
-                                <!-- Tasto play -->
-                                <span class="abs"><i class="fa-regular fa-circle-play"></i></span>
-                            </div>
-                            <h4 class="mb-10">Split</h4>
-                            <span class="fs_usmall">Subtitle</span>
-                        </div>
-                        <!-- A cure for Wellness -->
-                        <div class="album d_float clearfix mr_15">
-                            <!-- Immagine Album -->
-                            <div class="Photo d_flex justify_c align-c mb-10">
-                                <img src="./img/cure.jpeg" alt="Album a cure for wellness">
-                                <!-- Tasto play -->
-                                <span class="abs"><i class="fa-regular fa-circle-play"></i></span>
-                            </div>
-                            <h4 class="mb-10">A cure for Wellness</h4>
-                            <span class="fs_usmall">Subtitle</span>
-                        </div>
-                        <!-- Album Sinister -->
-                        <div class="album d_float clearfix mr_15">
-                            <!-- Immagine Album -->
-                            <div class="Photo d_flex justify_c align-c mb-10">
-                                <img src="./img/sinister.jpeg" alt="Album Sinister">
-                                <!-- Tasto play -->
-                                <span class="abs"><i class="fa-regular fa-circle-play"></i></span>
-                            </div>
-                            <h4 class="mb-10">Sinister</h4>
-                            <span class="fs_usmall">Subtitle</span>
-                        </div>
+                    <!-- Container delle Cards -->
+                    <div class="content_cards mb-20">
+
+                    </div>
+                    <!-- Titolo delle Cards -->
+                    <div class="content_title">
+
+                    </div>
+                    <!-- Container delle Cards - Small -->
+                    <div class="content_cards_sm mb-20">
+
+                    </div>
+                    <!-- Titolo delle Cards -->
+                    <div class="content_title">
+
+                    </div>
+                    <!-- Container delle Cards - Small -->
+                    <div class="content_cards_sm mb-20">
+
                     </div>
                 </div>
 
-            </div>
+
+
+
+
+                <!-- Cards - Recently Played -->
+                <!-- <div class="cards_items flex_wrap mb-30 d_float clearfix"> -->
+
+                <!--  -->
+                <!-- Cards Photo - Album copertina -->
+                <!-- <div class="cards_photo d_flex align-c justify_start">
+                        <!-- Heavy Metal -->
+                <!-- <div class="album d_float clearfix mr_15"> -->
+                <!-- Immagine Album -->
+                <!-- <div class="Photo d_flex justify_c align-c mb-10">
+                                <img src="./img/metal_lifting.jpg" alt="Album Heavy Metal"> -->
+                <!-- Tasto play -->
+                <!-- <span class="abs"><i class="fa-regular fa-circle-play"></i></span>
+                            </div>
+                            <h4 class="mb-10">Heavy Metal</h4>
+                            <span class="fs_usmall">Subtitle</span>
+                        </div> -->
+                <!-- Stranger Things -->
+                <!-- <div class="album d_float clearfix mr_15"> -->
+                <!-- Immagine Album -->
+                <!-- <div class="Photo d_flex justify_c align-c mb-10">
+                                <img src="./img/stranger.jpeg" alt="Stranger Things"> -->
+                <!-- Tasto play -->
+                <!-- <span class="abs"><i class="fa-regular fa-circle-play"></i></span>
+                            </div>
+                            <h4 class="mb-10">Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h4>
+                            <span class="fs_usmall">Kyle Dixon & Michael Stein</span>
+                        </div> -->
+                <!-- A quiet Place -->
+                <!-- <div class="album d_float clearfix mr_15"> -->
+                <!-- Immagine Album -->
+                <!-- <div class="Photo d_flex justify_c align-c mb-10">
+                                <img src="./img/aquietplace.jpeg" alt="A quiet place"> -->
+                <!-- Tasto play -->
+                <!-- <span class="abs"><i class="fa-regular fa-circle-play"></i></span>
+                            </div>
+                            <h4 class="mb-10">A quiet Place</h4>
+                            <span class="fs_usmall">Subtitle</span>
+                        </div> -->
+                <!-- Split -->
+                <!-- <div class="album d_float clearfix mr_15"> -->
+                <!-- Immagine Album -->
+                <!-- <div class="Photo d_flex justify_c align-c mb-10">
+                                <img src="./img/split.jpeg" alt="Album Split"> -->
+                <!-- Tasto play -->
+                <!-- <span class="abs"><i class="fa-regular fa-circle-play"></i></span>
+                            </div>
+                            <h4 class="mb-10">Split</h4>
+                            <span class="fs_usmall">Subtitle</span>
+                        </div> -->
+                <!-- A cure for Wellness -->
+                <!-- <div class="album d_float clearfix mr_15"> -->
+                <!-- Immagine Album -->
+                <!-- <div class="Photo d_flex justify_c align-c mb-10">
+                                <img src="./img/cure.jpeg" alt="Album a cure for wellness"> -->
+                <!-- Tasto play -->
+                <!-- <span class="abs"><i class="fa-regular fa-circle-play"></i></span>
+                            </div>
+                            <h4 class="mb-10">A cure for Wellness</h4>
+                            <span class="fs_usmall">Subtitle</span>
+                        </div> -->
+                <!-- Album Sinister -->
+                <!-- <div class="album d_float clearfix"> -->
+                <!-- Immagine Album -->
+                <!-- <div class="Photo d_flex justify_c align-c mb-10">
+                                <img src="./img/sinister.jpeg" alt="Album Sinister"> -->
+                <!-- Tasto play -->
+                <!-- <span class="abs"><i class="fa-regular fa-circle-play"></i></span>
+                            </div>
+                            <h4 class="mb-10">Sinister</h4>
+                            <span class="fs_usmall">Subtitle</span>
+                        </div> -->
+                <!-- </div> 
+                </div> -->
+                <!-- </div> -->
+                <!-- </div> -->
         </main>
     </div>
     <!-- Site_Footer -->

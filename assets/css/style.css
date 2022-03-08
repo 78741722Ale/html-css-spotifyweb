@@ -82,7 +82,6 @@ main {
   background-color: var(--MainColor);
   width: var(--Main_MW_set);
   height: var(--Main_H_Set);
-  background-color: red;
 }
 
 footer {
@@ -91,40 +90,52 @@ footer {
   background-color: var(--FooterColor);
 }
 
-/* Container dell'header */
-header {
-  width: var(--Header_MW_set);
-  height: var(--Header_H_set);
-  background-color: var(--HeaderColor);
+/* Container Scrollabile */
+.content {
+  width: 95%;
+  height: max-content;
+  /* background-color: var(--MainColor); */
+  background-color: lime;
+}
+/* Titolo di ogni sezione Album */
+.content_title {
+  width: 50%;
+  height: 75px;
+  background-color: brown;
 }
 
-header a {
-  padding: 10px 25px 10px 25px;
-  border: 0.3px solid white;
-  border-radius: 25px;
-  text-transform: uppercase;
-  font-size: 0.8rem;
-  text-decoration: none;
-  color: white;
+/* Contenuto */
+.content_cards {
+  width: 100%;
+  height: 400px;
+  background-color: crimson;
 }
 
+/* Contenuto al 50% */
+.content_cards_sm {
+  width: 50%;
+  height: 400px;
+  background-color: crimson;
+}
+
+/* Main principale delle cards */
 .Cards {
   width: var(--Cards_MW_set);
-  height: var(--Cards_H_set);
-  background-color: var(--MainColor);
+  height: max-content;
+  /* background-color: var(--MainColor); */
+  background-color: blueviolet;
 }
 .cards_items {
-  width: 95%;
+  background-color: aqua;
+  width: max-content;
   height: 350px;
-  flex-wrap: wrap;
 }
-
-
-
 .cards_title {
   width: 20%;
   height: 60px;
 }
+
+
 
 /* Container di tutte le carte */
 .cards_photo {
@@ -134,7 +145,7 @@ header a {
 
 /* Container della Singola Carta */
 .album {
-  width: calc(100% / 6);
+  width: 250px;
   height: 100%;
   text-align: center;
 }
@@ -148,7 +159,6 @@ header a {
 .Photo img {
   background-size: cover;
   width: 100%;
-  max-width: auto;
   height: 100%;
   transition: 15ms linear;
 }
@@ -178,7 +188,6 @@ header a {
 .album_text {
   height: 40%;
 }
-
 .item_album img {
   width: 100%;
   max-height: auto;
@@ -186,17 +195,16 @@ header a {
   object-fit: contain;
 }
 
+
 /* Cont del footer */
 .status {
   width: 700px;
   flex-wrap: wrap;
 }
-
 .track {
   width: var(--Aside_MW_set);
   height: var(--Footer_H_set);
 }
-
 .enter {
   width: 280px;
   height: var(--Footer_H_set);
@@ -206,6 +214,24 @@ header a {
 
 /* CONCLUSA */
 /*#region Header */
+/* Container dell'header */
+header {
+  width: var(--Header_MW_set);
+  height: var(--Header_H_set);
+  background-color: var(--HeaderColor);
+}
+
+header a {
+  padding: 10px 25px 10px 25px;
+  border: 0.3px solid white;
+  border-radius: 25px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: white;
+}
+
+
 
 /*#endregion*/
 
