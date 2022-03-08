@@ -19,165 +19,197 @@
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-    <!-- primo controllo - 07/03 -->
-    <!-- Document checking completed. No errors or warnings to show. -->
 
 <body>
-    <!-- DA SISTEMARE -->
-    <!-- /#site_header -->
-    <div class="flex_row justify_sb" id="site_header">
-        <!-- Logo spotify sulla Sidebar -->
-        <div class="logo d_flex flex_row justify_start align-c">
-            <img class="logo_img ml-20" src="./img/logo.svg" alt="Logo di Spotify">
-        </div>
-        <!-- Pulsante per effettuare Upgrade -->
-        <div class="call_to_action d_flex flex_row justify_c align-c">
-            <a href="#"> Effettua l'upgrade </a>
-        </div>
+
+    <!-- Site_Main Content -->
+    <div class="Wrapper clearfix">
+        <!-- Sidebar Laterale del Sito Web -->
+        <aside class="d_float">
+            <!-- Logo spotify sulla Sidebar -->
+            <div class="logo d_flex flex_row justify_start align-c">
+                <img class="logo_img ml-10" src="./img/logo.svg" alt="Logo di Spotify">
+            </div>
+            <!-- Contenuto della Sidebar Laterale -->
+            <div class="d_flex flex_column justify_sb" id="site_sidebar">
+                <!-- Contenuto superiore, playlist + home --> -->
+                <div class="main_sidebar d_float clearfix">
+                    <!-- /.home -->
+                    <div class="home fs_small ml-10 gap flex_column d_flex justify_start align_start">
+                        <a class="ancor_t" href="#"><i class="fa-solid fa-house pr_5"></i>Home</a>
+                        <a class="ancor_t" href="#"><i class="fa-solid fa-magnifying-glass pr_5"></i>Cerca</a>
+                        <a class="ancor_t" href="#"><i class="fa-solid fa-book-open pr_5"></i>La tua libreria</a>
+                    </div>
+                    <!-- /.play -->
+                    <div class="play fs_small ml-10 flex_column d_flex justify_start align_start"> -->
+                        <!-- Titolo della playlist -->
+                        <div class="play_title flex_column d_flex justify_c">
+                            <h4 style="color: rgb(255, 255, 255);" class="pl_15 pt_10">PLAYLIST</h4>
+                        </div>
+                        <!-- Nuova Playlist - Crea playlist-->
+                        <div class="new_play d_flex flex_row justify_start align-c">
+                            <a class="pl_15" href="#"><i class="fa-solid fa-square-plus"></i></a>
+                            <span class="pl_10">Crea Playlist</span>
+                        </div>
+                        <!-- nuovi nomi per playlist -->
+                        <div class="names_play gap_md pt_10 d_flex flex_column justify_start align_start">
+                            <a class="ancor_t" href="#">Nome Playlist</a>
+                            <a class="ancor_t" href="#">Nome Playlist</a>
+                            <a class="ancor_t" href="#">Nome Playlist</a>
+                            <a class="ancor_t" href="#">Nome Playlist</a>
+                            <a class="ancor_t" href="#">Nome Playlist</a>
+                            <a class="ancor_t" href="#">Nome Playlist</a>
+                            <a class="ancor_t" href="#">Nome Playlist</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Contenuto lato inferiore della sidebar -->
+                <div class="account rel_bottom"></div>
+            </div>
+        </aside>
+
+
+
+        <!-- Main principale del sito con Header e Cards -->
+        <main class="d_float">
+            <!-- Site_header -->
+            <header></header>
+            <!-- Site_Card -->
+            <div class="Cards"></div>
+        </main>
     </div>
-
-    <!-- /#site_content -->
-    <div id="site_content">
-        <!-- Container per la Sidebar -->
-        <div class="d_flex flex_column justify_sb" id="site_sidebar">
-            <!-- Contenuto superiore, playlist + home -->
-            <div class="main_sidebar d_float clearfix">
-                <!-- /.home -->
-                <div class="home fs_small pt_10 ml-10 gap flex_column d_flex justify_start align_start">
-                    <a class="ancor_t" href="#"><i class="fa-solid fa-house pr_5"></i>Home</a>
-                    <a class="ancor_t" href="#"><i class="fa-solid fa-magnifying-glass pr_5"></i>Cerca</a>
-                    <a class="ancor_t" href="#"><i class="fa-solid fa-book-open pr_5"></i>La tua libreria</a>
-                </div>
-                <!-- /.play -->
-                <div class="play fs_small ml-10 flex_column d_flex justify_start align_start">
-                    <!-- Titolo della playlist -->
-                    <div class="play_title flex_column d_flex justify_c ">
-                        <h4 style="color: rgb(255, 255, 255);" class="pl_15 pt_10">PLAYLIST</h4>
-                    </div>
-                    <!-- Nuova Playlist - Crea playlist-->
-                    <div class="new_play d_flex flex_row justify_start align-c">
-                        <a class="pl_15" href="#"><i class="fa-solid fa-square-plus"></i></a>
-                        <span class="pl_10">Crea Playlist</span>
-                    </div>
-                    <!-- nuovi nomi per playlist -->
-                    <div class="names_play gap_md pt_10 d_flex flex_column justify_start align_start">
-                        <a class="ancor_t" href="#">Nome Playlist</a>
-                        <a class="ancor_t" href="#">Nome Playlist</a>
-                        <a class="ancor_t" href="#">Nome Playlist</a>
-                        <a class="ancor_t" href="#">Nome Playlist</a>
-                        <a class="ancor_t" href="#">Nome Playlist</a>
-                        <a class="ancor_t" href="#">Nome Playlist</a>
-                        <a class="ancor_t" href="#">Nome Playlist</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Contenuto lato inferiore della sidebar -->
-            <div class="account rel_bottom"></div>
-        </div>
-
-        <!-- Main -->
-        <div class="flex_column align-c" id="site_main">
-            <!-- navbar superiore -->
-            <div class="navbar mb-20"></div>
-            <!-- Brani musicali - Container -->
-            <div class="container_cards d_flex flex_column align_start">
-                <!-- /.cards - Recently Played -->
-                <div class="cards mb-30 align-c d_float clearfix">
-                    <!-- /.cards_title -->
-                    <div class="cards_title"></div>
-                    <!-- /.cards_items - Recently Played -->
-                    <div class="cards_items d_flex flex_row justify_start">
-                        <!-- Heavy Metal -->
-                        <div class="item"></div>
-                        <!-- Stranger Things -->
-                        <div class="item"></div>
-                        <!-- A quiet place -->
-                        <div class="item"></div>
-                        <!-- Split -->
-                        <div class="item"></div>
-                        <!-- A cure for wellnes -->
-                        <div class="item"></div>
-                        <!-- Sinister -->
-                        <div class="item"></div>
-                    </div>
-                </div>
-                <!-- /.cards - Creato per John Doe-->
-                <div class="cards_2 mb-30 align-c d_float clearfix">
-                    <!-- /.cards_title -->
-                    <div class="cards_title"></div>
-                    <!-- /.cards_items - Recently Played -->
-                    <div class="cards_items d_flex flex_row justify_start">
-                        <!-- Releas Radar -->
-                        <div class="item"></div>
-                        <!-- Daily Mix 1 -->
-                        <div class="item"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- DA SISTEMARE -->
-    <!-- /#site_footer -->
-    <div class="d_flex flex_row justify_sb" id="site_footer">
-        <!-- Traccia e cartella dedicata -->
-        <div class="track d_flex flex_row justify_c align-c">
-            <!-- /.track_img -->
-            <div class="track_img d_flex flex_row justify_c align-c">
-                <img src="./img/sinister.jpeg" alt="">
-            </div>
-            <!-- /.track_name -->
-            <div class="track_name d_flex flex_column align_start justify_c">
-                <h4>Sinister</h4>
-                <span>Brano Nome</span>
-            </div>
-            <!-- /.track_icons -->
-            <div class="track_icons d_flex flex_row align-c justify_end">
-                <a class="ancor_t" href="#"><i class="fa-regular fa-heart"></i></a>
-                <a class="ancor_t" href="#"><i class="fa-solid fa-folder"></i></a>
-            </div>
-        </div>
-        <!-- Stato del brano -->
-        <div class="status d_flex flex_row justify_c align-c">
-            <!-- Media Player con sue icone -->
-            <div class="player pt_10 d_flex flex_row justify_c align-c">
-                <a href="#"><i class="fa-solid fa-shuffle"></i></a>
-                <a href="#"><i class="fa-solid fa-backward-step"></i></a>
-                <a style="font-size: 2rem;" href="#"><i class="fa-regular fa-circle-play"></i></a>
-                <a href="#"><i class="fa-solid fa-forward-step"></i></a>
-                <a href="#"><i class="fa-solid fa-arrow-rotate-right"></i></a>
-            </div>
-            <!-- Slider col Tempo -->
-            <div class="slider d_flex flex_row justify_c align-c">
-                <!-- Tempo a SX -->
-                <div class="t_left d_flex justify_c">
-                    0:25
+    <!-- Site_Footer -->
+    <footer class="d_flex justify_sb">
+        <div class="d_flex flex_row justify_sb"> 
+            <!-- Traccia e cartella dedicata -->
+            <div class="track d_flex flex_row justify_c align-c">
+                <!-- /.track_img -->
+                <div class="track_img d_flex flex_row justify_c align-c">
+                    <img src="./img/sinister.jpeg" alt="">
                 </div>
-                <!-- Slider del minuto brano -->
-                <div class="minute d_flex justify_c">
+                <!-- /.track_name -->
+                <div class="track_name d_flex flex_column align_start justify_c">
+                    <h4>Sinister</h4>
+                    <span>Brano Nome</span>
+                </div>
+                <!-- /.track_icons -->
+                <div class="track_icons d_flex flex_row align-c justify_end">
+                    <a class="ancor_t" href="#"><i class="fa-regular fa-heart"></i></a>
+                    <a class="ancor_t" href="#"><i class="fa-solid fa-folder"></i></a>
+                </div>
+            </div>
+            <!-- Stato del brano -->
+            <div class="status d_flex flex_row justify_c align-c">
+                <!-- Media Player con sue icone -->
+                <div class="player pt_10 d_flex flex_row justify_c align-c">
+                    <a href="#"><i class="fa-solid fa-shuffle"></i></a>
+                    <a href="#"><i class="fa-solid fa-backward-step"></i></a>
+                    <a style="font-size: 2rem;" href="#"><i class="fa-regular fa-circle-play"></i></a>
+                    <a href="#"><i class="fa-solid fa-forward-step"></i></a>
+                    <a href="#"><i class="fa-solid fa-arrow-rotate-right"></i></a>
+                </div>
+                <!-- Slider col Tempo -->
+                <div class="slider d_flex flex_row justify_c align-c">
+                    <!-- Tempo a SX -->
+                    <div class="t_left d_flex justify_c">
+                        0:25
+                    </div>
+                    <!-- Slider del minuto brano -->
+                    <div class="minute d_flex justify_c">
+                        <input type="range" min="1" max="100" value="30">
+                    </div>
+                    <!-- Tempo a DX -->
+                    <div class="t_right d_flex justify_c">
+                        4:35
+                    </div>
+                </div>
+            </div>
+            <!-- Volume brano ed entertainment -->
+            <div class="enter d_flex flex_row justify_c align-c">
+                <!-- Icone di trasmissione a monitor e a volume -->
+                <div class="enter_icons d_flex flex_row justify_se align-c">
+                    <a class="ancor_t" href="#"><i class="fa-solid fa-list"></i></a>
+                    <a class="ancor_t" href="#"><i class="fa-solid fa-desktop"></i></a>
+                    <a class="ancor_t" href="#"><i class="fa-solid fa-volume-high"></i></a>
+                </div>
+                <!-- Barra del volume -->
+                <div class="enter_vol d_flex flex_row justify_c align-c">
                     <input type="range" min="1" max="100" value="30">
                 </div>
-                <!-- Tempo a DX -->
-                <div class="t_right d_flex justify_c">
-                    4:35
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <!-- DA SISTEMARE -->
+    <!-- /#site_header -->
+
+
+
+
+    <!-- Pulsante per effettuare Upgrade -->
+    <!-- <div class="call_to_action d_flex flex_row justify_c align-c">
+        <a href="#"> Effettua l'upgrade </a>
+    </div> -->
+    <!-- </div> -->
+
+    <!-- /#site_content -->
+    <!-- <div id="site_content"> -->
+    <!-- Container per la Sidebar -->
+
+
+    <!-- Main -->
+    <!-- <div class="flex_column align-c" id="site_main"> -->
+    <!-- navbar superiore -->
+    <!-- <div class="navbar mb-20"></div> -->
+    <!-- Brani musicali - Container -->
+    <!-- <div class="container_cards d_flex flex_column align_start"> -->
+    <!-- /.cards - Recently Played -->
+    <!-- <div class="cards mb-30 align-c d_float clearfix"> -->
+    <!-- /.cards_title -->
+    <!-- <div class="cards_title"></div> -->
+    <!-- /.cards_items - Recently Played -->
+    <!-- <div class="cards_items d_flex flex_row justify_start"> -->
+    <!-- Heavy Metal -->
+    <!-- <div class="item"></div> -->
+    <!-- Stranger Things -->
+    <!-- <div class="item"></div> -->
+    <!-- A quiet place -->
+    <!-- <div class="item"></div> -->
+    <!-- Split -->
+    <!-- <div class="item"></div> -->
+    <!-- A cure for wellnes -->
+    <!-- <div class="item"></div> -->
+    <!-- Sinister -->
+    <!-- <div class="item"></div> -->
+    <!-- </div>
+                </div> -->
+    <!-- /.cards - Creato per John Doe-->
+    <!-- <div class="cards_2 mb-30 align-c d_float clearfix"> -->
+    <!-- /.cards_title -->
+    <!-- <div class="cards_title"></div> -->
+    <!-- /.cards_items - Recently Played -->
+    <!-- <div class="cards_items d_flex flex_row justify_start"> -->
+    <!-- Releas Radar -->
+    <!-- <div class="item"></div> -->
+    <!-- Daily Mix 1 -->
+    <!-- <div class="item"></div> -->
+    <!-- </div>
                 </div>
             </div>
-            <!--  -->
         </div>
-        <!-- Volume brano ed entertainment -->
-        <div class="enter d_flex flex_row justify_c align-c">
-            <!-- Icone di trasmissione a monitor e a volume -->
-            <div class="enter_icons d_flex flex_row justify_se align-c">
-                <a class="ancor_t" href="#"><i class="fa-solid fa-list"></i></a>
-                <a class="ancor_t" href="#"><i class="fa-solid fa-desktop"></i></a>
-                <a class="ancor_t" href="#"><i class="fa-solid fa-volume-high"></i></a>
-            </div>
-            <!-- Barra del volume -->
-            <div class="enter_vol d_flex flex_row justify_c align-c">
-                <input type="range" min="1" max="100" value="30">
-            </div>
-        </div>
-    </div>
+    </div> -->
+
+
+
+
+
 </body>
 
 </html>

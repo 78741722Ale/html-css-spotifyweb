@@ -1,4 +1,4 @@
-/* CONCLUSA */
+/* CONCLUSA - Major Update dei container */
 /*#region Generale */
 * {
   margin: 0;
@@ -7,12 +7,13 @@
 }
 
 body {
-  background-color: var(--BodyColor_try);
   font-family: "Montserrat", sans-serif;
-  max-width: var(--Body_MW_set);
-  height: var(--Body_H_set);
 }
 
+.Wrapper {
+  height: var(--Wrapper_H_set);
+  background-color: coral;
+}
 /*#endregion */
 
 /*#region Palette colori blocchi */
@@ -23,79 +24,47 @@ body {
   --HeaderColor: rgba(8, 11, 18, 1);
   --FooterColor: rgba(40, 40, 40, 1);
 }
-
 /*#endregion */
 
-/* CONCLUSA */
+/* CONCLUSA - MAJOR UPDATE DELLE DIMENSIONI */
 /*#region dimensioni */
 
 /* Dimensioni principali del corpo */
 :root {
-  --Body_MW_set: 100vw;
-  --Body_H_set: 100vh;
+  --Wrapper_MW_set: 100vw;
+  --Wrapper_H_set: calc(100vh - 80px);
+  --Aside_MW_set: 200px;
+  --Aside_H_Set: 100%;
+  --Main_MW_set: calc(100% - 200px);
+  --Main_H_Set: 100%;
   --Header_MW_set: 100%;
+  --Cards_MW_set: 100%;
+  --Cards_H_set: calc(100% - 80px);
   --Header_H_set: 80px;
-  --Content_MW_set: 100%;
-  --Content_H_set: calc(100% - 160px);
-  --Sidebar_MW_set: 250px;
-  --Sidebar_H_set: calc(100vh - 160px);
-  --Main_MW_set: calc(100% - 250px);
-  --Main_H_set: 100%;
-  --Footer_MW_set: 100%;
+  --Footer_MW_set: 100vw;
   --Footer_H_set: 80px;
 }
-
-#site_header {
-  background-color: var(--HeaderColor);
-  width: var(--Header_MW_set);
-  height: var(--Header_H_set);
-}
-
-#site_content {
-  background-color: purple;
-  width: var(--Content_MW_set);
-  height: var(--Content_H_set);
-}
-
-#site_sidebar {
-  position: relative;
-  background-color: var(--SidebarColor);
-  width: var(--Sidebar_MW_set);
-  height: var(--Sidebar_H_set);
-}
-
-#site_main {
-  background-color: blue;
-  width: var(--Main_MW_set);
-  height: var(--Main_H_set);
-}
-
-#site_footer {
-  background-color: var(--FooterColor);
-  width: var(--Footer_MW_set);
-  height: var(--Footer_H_set);
-}
-
 /* Dimensioni dei container */
 :root {
-  --Logo_MW_set: 250px;
+  --Logo_MW_set: 100%;
   --Logo_H_set: 80px;
   --Navbar_MW_set: 65%;
   --Navbar_H_set: 50px;
   --Container_cards: 95%;
   --Container_H_set: 900px;
-  --Cards_MW_set: 100%;
-  --Cards_H_set: 300px;
-  --Main_Side_MW_set: 100%;
-  --Main_Side_H_set: 400px;
   --Item_MW_set: 300px;
   --Item_H_set: 100%;
 }
+/*#endregion */
 
-/*#endregion*/
+/*#region Container principali  */
 
-/* CONCLUSA */
-/*#region Header */
+/* Container dell'Aside */
+aside {
+  width: var(--Aside_MW_set);
+  height: var(--Aside_H_Set);
+  background-color: var(--SidebarColor);
+}
 
 .logo {
   background-color: rgba(0, 0, 0, 1);
@@ -104,9 +73,29 @@ body {
 }
 
 .logo_img {
-  max-width: 55%;
+  max-width: 75%;
   width: auto;
   height: 100%;
+}
+
+/* Container del main */
+main {
+  width: var(--Main_MW_set);
+  height: var(--Main_H_Set);
+  background-color: red;
+}
+
+footer {
+  width: var(--Footer_MW_set);
+  height: var(--Footer_H_set);
+  background-color: var(--FooterColor);
+}
+
+/* Container dell'header */
+header {
+  width: var(--Header_MW_set);
+  height: var(--Header_H_set);
+  background-color: var(--HeaderColor);
 }
 
 .call_to_action {
@@ -123,6 +112,44 @@ body {
   text-decoration: none;
   color: white;
 }
+
+.Cards {
+  width: var(--Cards_MW_set);
+  height: var(--Cards_H_set);
+  background-color: lightgreen;
+}
+
+/* trash */
+/* .cards {
+  background-color: blueviolet;
+  width: var(--Cards_MW_set);
+  height: var(--Cards_H_set);
+} */
+
+/* .cards_2 {
+  background-color: blueviolet;
+  width: max-content;
+  height: var(--Cards_H_set);
+} */
+
+.cards_title {
+  width: 100%;
+  background-color: bisque;
+  height: 20%;
+}
+
+.cards_items {
+  width: 100%;
+  height: 80%;
+  background-color: burlywood;
+}
+
+/*#endregion*/
+
+/* CONCLUSA */
+/*#region Header */
+
+
 /*#endregion*/
 
 /* CONCLUSA */
@@ -194,30 +221,6 @@ body {
   background-color: darkgoldenrod;
 }
 
-.cards {
-  background-color: blueviolet;
-  width: var(--Cards_MW_set);
-  height: var(--Cards_H_set);
-}
-
-.cards_2 {
-  background-color: blueviolet;
-  width: max-content;
-  height: var(--Cards_H_set);
-}
-
-.cards_title {
-  width: 100%;
-  background-color: bisque;
-  height: 20%;
-}
-
-.cards_items {
-  width: 100%;
-  height: 80%;
-  background-color: burlywood;
-}
-
 .item {
   width: var(--Item_MW_set);
   height: var(--Item_H_set);
@@ -231,7 +234,9 @@ body {
 /*#region Track - a Sinistra del Footer */
 
 .track {
-  width: var(--Logo_MW_set);
+  width: var(--Aside_MW_set);
+  height: var(--Footer_H_set);
+  background-color:red ;
 }
 
 .track_img,
@@ -279,6 +284,7 @@ body {
 /*#region del Media Player */
 
 .status {
+  background-color: brown;
   width: 800px;
   flex-wrap: wrap;
 }
@@ -321,6 +327,8 @@ body {
 /*#region Sezione entertainmente */
 .enter {
   width: var(--Logo_MW_set);
+  height: var(--Footer_H_set);
+  background-color:aqua ;
 }
 
 .enter_icons,
