@@ -119,6 +119,22 @@ header {
   background-color: lightgreen;
 }
 
+.status {
+  width: 700px;
+  flex-wrap: wrap;
+}
+
+.track {
+  width: var(--Aside_MW_set);
+  height: var(--Footer_H_set);
+}
+
+.enter {
+  width: var(--Aside_MW_set);
+  height: var(--Footer_H_set);
+}
+
+
 /* trash */
 /* .cards {
   background-color: blueviolet;
@@ -164,7 +180,6 @@ header {
 }
 
 /* Container per la playlist */
-
 .play {
   height: 75%;
 }
@@ -232,13 +247,6 @@ header {
 /*#region Footer */
 
 /*#region Track - a Sinistra del Footer */
-
-.track {
-  width: var(--Aside_MW_set);
-  height: var(--Footer_H_set);
-  background-color:red ;
-}
-
 .track_img,
 .track_name,
 .track_icons {
@@ -283,12 +291,6 @@ header {
 
 /*#region del Media Player */
 
-.status {
-  background-color: brown;
-  width: 800px;
-  flex-wrap: wrap;
-}
-
 /* Player e sue icone */
 .player {
   width: 45%;
@@ -325,15 +327,11 @@ header {
 /*#endregion */
 
 /*#region Sezione entertainmente */
-.enter {
-  width: var(--Logo_MW_set);
-  height: var(--Footer_H_set);
-  background-color:aqua ;
-}
+
 
 .enter_icons,
 .enter_vol {
-  width: 50%;
+  width: 150px;
   height: 100%;
 }
 
