@@ -86,6 +86,9 @@
 
 /*#region Margin e Padding  */
 /* Common per i margini */
+.mb-5 {
+  margin-bottom: 5px;
+}
 .mb-10 {
   margin-bottom: 10px;
 }
@@ -164,6 +167,15 @@
 
 .fs_small {
   font-size: 0.85rem;
+}
+
+.light {
+  color: rgb(255,255,255);
+}
+
+
+.fs_lg {
+  font-size: 1.25rem;
 }
 
 .fs_usmall {

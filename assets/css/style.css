@@ -72,7 +72,7 @@ aside {
 }
 
 .logo_img {
-  max-width: 75%;
+  max-width: 55%;
   width: auto;
   height: 100%;
 }
@@ -142,7 +142,6 @@ header a {
   height: 65%;
 }
 
-
 /* Singola Carta */
 
 .item {
@@ -199,16 +198,15 @@ header a {
 .main_sidebar {
   height: var(--Main_Side_H_set);
 }
-
 /* Container sotto al logo */
 .home {
   height: 25%;
 }
-
 /* Container per la playlist */
 .play {
   height: 75%;
 }
+
 .play_title,
 .new_play,
 .names_play {
@@ -223,28 +221,25 @@ header a {
 .names_play {
   height: 70%;
 }
-
 .new_play i,
 .new_play span {
   color: rgba(134, 134, 134, 1);
 }
-
 .new_play i {
   font-size: 2.75rem;
 }
-
 .new_play span {
   font-weight: bold;
 }
-
 .account {
   height: 75px;
+  background-color: blue;
+  position: absolute;
+  bottom: 0%;
 }
-
 .main_sidebar {
   width: var(--Main_Side_MW_set);
 }
-
 /*#endregion*/
 
 /* DA CONCLUDERE */
@@ -367,5 +362,20 @@ header a {
 /*#endregion*/
 
 /*#endregion Footer */
+
+/*#region HOVER sui contenuti  */
+
+.home:first-of-type {
+  background-color: transparent;
+  transition: 4ms linear;
+}
+
+.home:first-of-type :hover {
+  color: white;
+  border-left: 3px solid limegreen;
+}
+
+/*#endregion*/
+
 
 

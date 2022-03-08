@@ -19,9 +19,7 @@
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-
     <!-- Site_Main Content -->
     <div class="Wrapper clearfix">
         <!-- Sidebar Laterale del Sito Web -->
@@ -35,15 +33,15 @@
                 <!-- Contenuto superiore, playlist + home --> -->
                 <div class="main_sidebar d_float clearfix">
                     <!-- /.home -->
-                    <div class="home fs_small ml-10 gap flex_column d_flex justify_start align_start">
-                        <a class="ancor_t" href="#"><i class="fa-solid fa-house pr_5"></i>Home</a>
-                        <a class="ancor_t" href="#"><i class="fa-solid fa-magnifying-glass pr_5"></i>Cerca</a>
-                        <a class="ancor_t" href="#"><i class="fa-solid fa-book-open pr_5"></i>La tua libreria</a>
+                    <div class="home fs_small gap flex_column d_flex justify_start align_start">
+                        <a class="hover ancor_t mb-5" href="#"><i class="fa-solid fa-house pr_5 fs_lg"></i>Home</a>
+                        <a class="ancor_t mb-5" href="#"><i class="fa-solid fa-magnifying-glass fs_lg pr_5"></i>Cerca</a>
+                        <a class="ancor_t mb-5" href="#"><i class="fa-solid fa-book-open fs_lg pr_5"></i>La tua libreria</a>
                     </div>
-                    <!-- /.play -->
-                    <div class="play fs_small ml-10 flex_column d_flex justify_start align_start"> -->
+                    <!-- Playlist e nuove playlist -->
+                    <div class="play fs_small flex_column d_flex justify_start align_start"> -->
                         <!-- Titolo della playlist -->
-                        <div class="play_title flex_column d_flex justify_c">
+                        <div class="play_title mb-5 flex_column d_flex justify_c">
                             <h4 style="color: rgb(255, 255, 255);" class="pl_15 pt_10">PLAYLIST</h4>
                         </div>
                         <!-- Nuova Playlist - Crea playlist-->
@@ -53,18 +51,20 @@
                         </div>
                         <!-- nuovi nomi per playlist -->
                         <div class="names_play gap_md pt_10 d_flex flex_column justify_start align_start">
-                            <a class="ancor_t" href="#">Nome Playlist</a>
-                            <a class="ancor_t" href="#">Nome Playlist</a>
-                            <a class="ancor_t" href="#">Nome Playlist</a>
-                            <a class="ancor_t" href="#">Nome Playlist</a>
-                            <a class="ancor_t" href="#">Nome Playlist</a>
-                            <a class="ancor_t" href="#">Nome Playlist</a>
-                            <a class="ancor_t" href="#">Nome Playlist</a>
+                            <a class="ancor_t mb-5" href="#">Nome Playlist</a>
+                            <a class="ancor_t mb-5" href="#">Nome Playlist</a>
+                            <a class="ancor_t mb-5" href="#">Nome Playlist</a>
+                            <a class="ancor_t mb-5" href="#">Nome Playlist</a>
+                            <a class="ancor_t mb-5" href="#">Nome Playlist</a>
+                            <a class="ancor_t mb-5" href="#">Nome Playlist</a>
+                            <a class="ancor_t mb-5" href="#">Nome Playlist</a>
                         </div>
                     </div>
                 </div>
                 <!-- Contenuto lato inferiore della sidebar -->
-                <div class="account rel_bottom"></div>
+                <div class="account d_float">
+
+                </div>
             </div>
         </aside>
 
@@ -91,7 +91,7 @@
                 <div class="cards_items mb-30 d_float clearfix">
                     <!-- /.cards_title -->
                     <div class="cards_title d_flex align-c">
-                        <h2>Recently Played</h2>
+                        <h2 class="light">Recently Played</h2>
                     </div>
                     <!-- Cards Photo - Album copertina -->
                     <div class="cards_photo d_flex align-c justify_start">
@@ -109,19 +109,27 @@
                         </div>
                         <!-- A quiet Place -->
                         <div class="album mr_15">
-                            <img class="photo" src="./img/aquietplace.jpeg" alt="A quiet place">
+                            <img class="photo mb-10" src="./img/aquietplace.jpeg" alt="A quiet place">
+                            <h4 class="mb-10">A quiet Place</h4>
+                            <span class="fs_usmall">Subtitle</span>
                         </div>
-                        <!-- Heavy Metal -->
+                        <!-- Split -->
                         <div class="album mr_15">
-                            <img class="photo" src="./img/split.jpeg" alt="Album Split">
+                            <img class="photo mb-10" src="./img/split.jpeg" alt="Album Split">
+                            <h4 class="mb-10">Split</h4>
+                            <span class="fs_usmall">Subtitle</span>
                         </div>
-                        <!-- Heavy Metal -->
+                        <!-- A cure for Wellness -->
                         <div class="album mr_15">
-                            <img class="photo" src="./img/cure.jpeg" alt="Album a cure for wellness">
+                            <img class="photo mb-10" src="./img/cure.jpeg" alt="Album a cure for wellness">
+                            <h4 class="mb-10">A cure for Wellness</h4>
+                            <span class="fs_usmall">Subtitle</span>
                         </div>
                         <!-- Heavy Metal -->
                         <div class="album">
-                            <img class="photo" src="./img/sinister.jpeg" alt="Album Sinister">
+                            <img class="photo mb-10" src="./img/sinister.jpeg" alt="Album Sinister">
+                            <h4 class="mb-10">Sinister</h4>
+                            <span class="fs_usmall">Subtitle</span>
                         </div>
                     </div>
                 </div>
@@ -129,7 +137,6 @@
         </main>
     </div>
 
-    <!-- DA SISTEMARE -->
     <!-- Site_Footer -->
     <footer class="d_flex flex_row justify_sb">
         <!-- Traccia e cartella dedicata -->
@@ -179,9 +186,9 @@
         <div class="enter d_flex flex_row justify_c align-c">
             <!-- Icone di trasmissione a monitor e a volume -->
             <div class="enter_icons d_flex flex_row justify_se align-c">
-                <a class="ancor_t" href="#"><i class="fa-solid fa-list"></i></a>
-                <a class="ancor_t" href="#"><i class="fa-solid fa-desktop"></i></a>
-                <a class="ancor_t" href="#"><i class="fa-solid fa-volume-high"></i></a>
+                <a class="ancor_t light" href="#"><i class="fa-solid fa-list"></i></a>
+                <a class="ancor_t light" href="#"><i class="fa-solid fa-desktop"></i></a>
+                <a class="ancor_t light" href="#"><i class="fa-solid fa-volume-high"></i></a>
             </div>
             <!-- Barra del volume -->
             <div class="enter_vol d_flex flex_row justify_c align-c">
@@ -191,5 +198,4 @@
     </footer>
 
 </body>
-
 </html>
