@@ -44,7 +44,7 @@ body {
   --Footer_H_set: 80px;
 }
 /* Dimensioni dei container */
-:root { 
+:root {
   --Logo_MW_set: 100%;
   --Logo_H_set: 80px;
   --Navbar_MW_set: 65%;
@@ -112,13 +112,15 @@ header a {
   width: var(--Cards_MW_set);
   height: var(--Cards_H_set);
   background-color: var(--MainColor);
-  
 }
 .cards_items {
   width: 95%;
   height: 350px;
   flex-wrap: wrap;
 }
+
+
+
 .cards_title {
   width: 20%;
   height: 60px;
@@ -130,16 +132,30 @@ header a {
   height: calc(100% - 60px);
 }
 
+/* Container della Singola Carta */
 .album {
   width: calc(100% / 6);
   height: 100%;
   text-align: center;
 }
-.photo {
+
+.Photo {
+  position: relative;
+  width: 100%;
+  height: 65%;
+}
+
+.Photo img {
   background-size: cover;
   width: 100%;
   max-width: auto;
-  height: 65%;
+  height: 100%;
+  transition: 15ms linear;
+}
+
+.Photo i {
+  font-size: 60px;
+  color: white;
 }
 
 /* Singola Carta */
@@ -249,13 +265,11 @@ header a {
   width: var(--Navbar_MW_set);
   height: var(--Navbar_H_set);
 }
-
 .container_cards {
   width: var(--Container_cards);
   height: var(--Container_H_set);
   background-color: darkgoldenrod;
 }
-
 .item {
   width: var(--Item_MW_set);
   height: var(--Item_H_set);
@@ -348,7 +362,6 @@ header a {
 
 /*#region Sezione entertainmente */
 
-
 .enter_icons,
 .enter_vol {
   width: 150px;
@@ -375,7 +388,23 @@ header a {
   border-left: 3px solid limegreen;
 }
 
+.navbar ul:first-of-type :hover {
+  background-color: transparent;
+  transition: 15ms linear;
+}
+
+.navbar ul:first-of-type :hover {
+  color: white;
+  border-bottom-width: 5px;
+  border-bottom: 3px solid limegreen;
+}
+
+.Photo:hover {
+  filter: brightness(50%);
+}
+
+/* .Photo span:hover {
+  visibility: visible;
+} */
+
 /*#endregion*/
-
-
-

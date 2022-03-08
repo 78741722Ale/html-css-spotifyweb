@@ -19,6 +19,14 @@
   float: left;
   position: relative;
 }
+
+.abs {
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
 .clearfix::after {
   clear: both;
   content: "";
@@ -151,7 +159,7 @@
 .navbar li {
   display: inline;
   text-transform: uppercase;
-  padding: 0px 25px 0px 0px;
+  margin-right: 20px;
 }
 
 .track,
