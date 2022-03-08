@@ -86,6 +86,9 @@
 
 /*#region Margin e Padding  */
 /* Common per i margini */
+.mb-10 {
+  margin-bottom: 10px;
+}
 .mb-20 {
   margin-bottom: 20px;
 }
@@ -162,6 +165,20 @@
 .fs_small {
   font-size: 0.85rem;
 }
+
+.fs_usmall {
+  font-size: 0.75rem;
+}
+
+.album h4 {
+  color: white;
+  font-weight: bold;
+}
+
+.album span {
+  color: rgba(134, 134, 134, 1);
+}
+
 /*#endregion */
 
 main {

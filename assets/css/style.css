@@ -18,8 +18,7 @@ body {
 
 /*#region Palette colori blocchi */
 :root {
-  --BodyColor_try: ;
-  --MainColor_try: ;
+  --MainColor: rgba(20, 25, 34, 1);
   --SidebarColor: rgba(0, 0, 0, 1);
   --HeaderColor: rgba(8, 11, 18, 1);
   --FooterColor: rgba(40, 40, 40, 1);
@@ -33,9 +32,9 @@ body {
 :root {
   --Wrapper_MW_set: 100vw;
   --Wrapper_H_set: calc(100vh - 80px);
-  --Aside_MW_set: 200px;
+  --Aside_MW_set: 250px;
   --Aside_H_Set: 100%;
-  --Main_MW_set: calc(100% - 200px);
+  --Main_MW_set: calc(100% - 250px);
   --Main_H_Set: calc(100vh - 80px);
   --Header_MW_set: 100%;
   --Cards_MW_set: 100%;
@@ -50,7 +49,7 @@ body {
   --Logo_H_set: 80px;
   --Navbar_MW_set: 65%;
   --Navbar_H_set: 50px;
-  --Container_cards: 95%;
+  --Container_cards: calc(100% - 100px);
   --Container_H_set: 900px;
   --Item_MW_set: 300px;
   --Item_H_set: 100%;
@@ -80,6 +79,7 @@ aside {
 
 /* Container del main */
 main {
+  background-color: var(--MainColor);
   width: var(--Main_MW_set);
   height: var(--Main_H_Set);
   background-color: red;
@@ -111,32 +111,67 @@ header a {
 .Cards {
   width: var(--Cards_MW_set);
   height: var(--Cards_H_set);
-  background-color: lightgreen;
+  background-color: var(--MainColor);
+  
 }
-
 .cards_items {
   width: 95%;
   height: 350px;
-  background-color: aquamarine;
+  flex-wrap: wrap;
 }
-
 .cards_title {
   width: 20%;
   height: 60px;
-  background-color: bisque;
 }
 
-.cards_main {
+/* Container di tutte le carte */
+.cards_photo {
   width: 100%;
   height: calc(100% - 60px);
 }
 
-.item {
+.album {
   width: calc(100% / 6);
   height: 100%;
+  text-align: center;
+}
+.photo {
+  background-size: cover;
+  width: 100%;
+  max-width: auto;
+  height: 65%;
+}
+
+
+/* Singola Carta */
+
+.item {
+  width: min-content;
+  height: 100%;
+  background-color: white;
+}
+
+.item_album,
+.album_text {
+  width: 100%;
   background-color: crimson;
 }
 
+.item_album {
+  height: 60%;
+}
+.album_text {
+  height: 40%;
+}
+
+.item_album img {
+  width: 100%;
+  max-height: auto;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Cont del footer */
 .status {
   width: 700px;
   flex-wrap: wrap;
