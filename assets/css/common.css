@@ -1,4 +1,3 @@
-
 /*#region common utilities per il flex  */
 /* Regola in comune per il flex */
 
@@ -32,6 +31,9 @@
 }
 .flex_column {
   flex-direction: column;
+}
+.flex_wrap {
+  flex-wrap: wrap;
 }
 
 /* Commons per il justify-content */
@@ -140,6 +142,12 @@
   text-transform: none;
 }
 
+.navbar li {
+  display: inline;
+  text-transform: uppercase;
+  padding: 0px 25px 0px 0px;
+}
+
 .track,
 .status,
 .enter {
@@ -155,3 +163,7 @@
   font-size: 0.85rem;
 }
 /*#endregion */
+
+main {
+  overflow-y: auto;
+}
