@@ -150,8 +150,14 @@ footer {
 
 .Photo i {
   font-size: 60px;
-  color: white;
+  color: transparent;
+  transition: 10ms linear;
 }
+
+/* .Photo span {
+  visibility: hidden;
+  transition: 10ms linear;
+} */
 
 /* Cont del footer */
 .status {
@@ -361,34 +367,75 @@ header a {
 
 /*#region HOVER sui contenuti  */
 
-.home:first-of-type {
+/* Sidebar Laterale */
+.home a {
   background-color: transparent;
   transition: 4ms linear;
 }
-
-.home:first-of-type :hover {
+.home a:hover {
   color: white;
   border-left: 3px solid limegreen;
 }
 
+/* Navbar del Main */
 .navbar ul:first-of-type :hover {
   background-color: transparent;
   transition: 15ms linear;
 }
-
 .navbar ul:first-of-type :hover {
   color: white;
-  border-bottom-width: 5px;
+  border-bottom-width: 10%;
   border-bottom: 3px solid limegreen;
 }
 
-.Photo:hover {
+/* Hover delle foto Album */
+.Photo img:hover {
   filter: brightness(50%);
+}
+.Photo i:hover {
+  color: white;
   z-index: 1;
+} 
+
+/* Playlist della Sidebar */
+.names_play a {
+  background-color: transparent;
+  transition: 3ms linear;
+}
+.names_play a:hover {
+  color: white;
 }
 
-/* .Photo span:hover {
-  visibility: visible;
-} */
+.new_play i:hover,
+.new_play span:hover
+{
+  color: white;
+}
+
+/* Header */
+header a:hover {
+  transform: scale(1.05);
+}
+
+/* Footer */
+
+/* icone a SX */
+.track_name span:hover {
+  text-decoration: underline;
+}
+
+.track_icons a:hover {
+  color: white;
+}
+
+/* Icone a DX */
+.enter_icons a:hover{
+  transform: scale(1.25);
+}
+
+/* Player con barra regolazione minuti */
+.player a:hover{
+  transform: scale(1.25);
+}
 
 /*#endregion*/
