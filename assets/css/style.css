@@ -94,71 +94,56 @@ footer {
 .content {
   width: 95%;
   height: max-content;
-  /* background-color: var(--MainColor); */
-  background-color: lime;
+  /* background-color: var(--MainColor);  */
 }
 /* Titolo di ogni sezione Album */
 .content_title {
   width: 50%;
   height: 75px;
-  background-color: brown;
 }
 
 /* Contenuto */
 .content_cards {
   width: 100%;
-  height: 400px;
-  background-color: crimson;
+  height: 800px;
 }
 
 /* Contenuto al 50% */
 .content_cards_sm {
   width: 50%;
   height: 400px;
-  background-color: crimson;
 }
 
 /* Main principale delle cards */
 .Cards {
   width: var(--Cards_MW_set);
   height: max-content;
-  /* background-color: var(--MainColor); */
-  background-color: blueviolet;
-}
-.cards_items {
-  background-color: aqua;
-  width: max-content;
-  height: 350px;
-}
-.cards_title {
-  width: 20%;
-  height: 60px;
-}
-
-
-
-/* Container di tutte le carte */
-.cards_photo {
-  width: 100%;
-  height: calc(100% - 60px);
+  background-color: var(--MainColor); 
 }
 
 /* Container della Singola Carta */
 .album {
-  width: 250px;
+  width: calc(100% / 4);
+  height: calc(100% / 2);
+  text-align: center;
+}
+
+.album_sm {
+  width: calc(100% / 2);
   height: 100%;
   text-align: center;
 }
 
 .Photo {
   position: relative;
-  width: 100%;
-  height: 65%;
+  width: 95%;
+  height: 75%;
 }
 
 .Photo img {
   background-size: cover;
   width: 100%;
+  max-width: 100%;
   height: 100%;
   transition: 15ms linear;
 }
@@ -167,34 +152,6 @@ footer {
   font-size: 60px;
   color: white;
 }
-
-/* Singola Carta */
-
-.item {
-  width: min-content;
-  height: 100%;
-  background-color: white;
-}
-
-.item_album,
-.album_text {
-  width: 100%;
-  background-color: crimson;
-}
-
-.item_album {
-  height: 60%;
-}
-.album_text {
-  height: 40%;
-}
-.item_album img {
-  width: 100%;
-  max-height: auto;
-  height: 100%;
-  object-fit: contain;
-}
-
 
 /* Cont del footer */
 .status {
@@ -427,6 +384,7 @@ header a {
 
 .Photo:hover {
   filter: brightness(50%);
+  z-index: 1;
 }
 
 /* .Photo span:hover {

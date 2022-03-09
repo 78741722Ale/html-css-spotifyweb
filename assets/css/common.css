@@ -181,6 +181,9 @@
   color: rgb(255,255,255);
 }
 
+.w_90 {
+  width: 90%;
+}
 
 .fs_lg {
   font-size: 1.25rem;
@@ -190,7 +193,8 @@
   font-size: 0.75rem;
 }
 
-.album h4 {
+.album h4,
+.album_sm h4 {
   color: white;
   font-weight: bold;
 }
