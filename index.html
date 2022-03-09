@@ -13,7 +13,7 @@
     <!-- Link al font di Google - Montserrat -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap" rel="stylesheet">
     <!-- Link a font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
@@ -65,9 +65,20 @@
                     </div>
                 </div>
                 <!-- Contenuto lato inferiore della sidebar -->
-                <div class="account d_float">
-
-                </div>
+                <div class="account d_float clearfix">
+                    <!-- /.upper - Installa App -->
+                    <div class="upper d_flex align-c justify_start">
+                        <i class="fa-regular fa-circle-down litegray pl_15 fs_usmall"></i>
+                        <a class="ancor_t litegray pl_10 fs_usmall" href="#">Installa App</a>
+                    </div>
+                    <!-- Linea divider -->
+                    <hr class="divider ml-20">
+                    <!-- /.under - Account-->
+                    <div class="under d_flex align-c justify_start">
+                        <i class="fa-regular fa-user litegray pl_15"></i>
+                        <a class="ancor_t light pl_10 bold fs_usmall" href="#">John Doe</a>
+                    </div>
+                </div> 
             </div>
         </aside>
 
@@ -97,7 +108,7 @@
                         <h2 class="light">Recently Played</h2>
                     </div>
                     <!-- Contenuto delle Cards -->
-                    <div class="content_cards flex_wrap d_flex justify_start align-c mb-20">
+                    <div class="content_cards flex_wrap d_flex justify_start align-c mb-10">
                         <!-- Heavy Metal -->
                         <div class="album">
                             <!-- Immagine Album -->
@@ -107,7 +118,7 @@
                                 <span class="abs"><i class="fa-regular fa-circle-play"></i></span>
                             </div>
                             <h4 class="mb-10">Heavy Metal</h4>
-                            <span class="fs_usmall">Subtitle</span>
+                            <span class="fs_usmall bold">Subtitle</span>
                         </div>
                         <!-- Stranger Things -->
                         <div class="album">
@@ -118,7 +129,7 @@
                                 <span class="abs"><i class="fa-regular fa-circle-play"></i></span>
                             </div>
                             <h4 class="w_90 mb-10">Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h4>
-                            <span class="fs_usmall">Kyle Dixon & Michael Stein</span>
+                            <span class="fs_usmall bold">Kyle Dixon & Michael Stein</span>
                         </div>
                         <!-- A quiet Place -->
                         <div class="album">
@@ -129,7 +140,7 @@
                                 <span class="abs"><i class="fa-regular fa-circle-play"></i></span>
                             </div>
                             <h4 class="mb-10">A quiet Place</h4>
-                            <span class="fs_usmall">Subtitle</span>
+                            <span class="fs_usmall bold">Subtitle</span>
                         </div>
                         <!-- Split -->
                         <div class="album">
@@ -140,7 +151,7 @@
                                 <span class="abs"><i class="fa-regular fa-circle-play"></i></span>
                             </div>
                             <h4 class="mb-10">Split</h4>
-                            <span class="fs_usmall">Subtitle</span>
+                            <span class="fs_usmall bold">Subtitle</span>
                         </div>
                         <!-- A cure for Wellness -->
                         <div class="album">
@@ -151,7 +162,7 @@
                                 <span class="abs"><i class="fa-regular fa-circle-play"></i></span>
                             </div>
                             <h4 class="mb-10">A cure for Wellness</h4>
-                            <span class="fs_usmall">Subtitle</span>
+                            <span class="fs_usmall bold">Subtitle</span>
                         </div>
                         <!-- Album Sinister -->
                         <div class="album">
@@ -162,16 +173,16 @@
                                 <span class="abs"><i class="fa-regular fa-circle-play"></i></span>
                             </div>
                             <h4 class="mb-10">Sinister</h4>
-                            <span class="fs_usmall">Subtitle</span>
+                            <span class="fs_usmall bold">Subtitle</span>
                         </div>
                     </div>
-                    <!-- Titolo delle Cards -->
-                    <div class="content_title d_flex align-c">
-                        <h2 class="light">Creato per John Doe</h2>
-                    </div>
-                    <!-- Container delle Cards - Small -->
                     <!-- Creato per John Doe -->
-                    <div class="content_cards_sm d_flex justify_sa align-c mb-20">
+                    <div class="content_title d_flex flex_column justify_start align_start">
+                        <h2 class="light mb-10">Creato per John Doe</h2>
+                        <h4 class="litegray fs_usmall bold">Più ascolti, più saranno accurati i suggerimenti</h4>
+                    </div>
+                    <!-- Contenuto delle Cards - Small -->
+                    <div class="content_cards_sm d_flex justify_sa align-c mb-10">
                         <!-- Release Radar -->
                         <div class="album_sm">
                             <!-- Immagine Album -->
@@ -195,12 +206,31 @@
                     </div>
                     <!-- Titolo delle Cards -->
                     <div class="content_title">
-                        <h2 class="light">Creato per John Doe</h2>
+                        <h2 class="light mb-10">Artisti più popolari</h2>
+                        <h4 class="litegray fs_usmall bold">Più ascolti, più saranno accurati i suggerimenti</h4>
                     </div>
-                    <!-- Container delle Cards - Small -->
+                    <!-- Container delle Cards - Small e circolari -->
                     <div class="content_cards_sm d_flex justify_sa align-c">
-                        <div class="album_sm"></div>
-                        <div class="album_sm"></div>
+                        <!-- Lana del Rey -->
+                        <div class="album_sm_circle">
+                            <!-- Immagine Album -->
+                            <div class="Photo d_flex justify_c align-c mb-10">
+                                <img src="./img/youg.jpeg" alt="Lan del Ray">
+                                <!-- Tasto play -->
+                                <span class="abs"><i class="fa-regular fa-circle-play"></i></span>
+                            </div>
+                            <h4 class="mb-10 bold">Lana del Ray</h4>
+                        </div>
+                        <!-- Ludovico Einaudi -->
+                        <div class="album_sm_circle">
+                            <!-- Immagine Album -->
+                            <div class="Photo d_flex justify_c align-c mb-10">
+                                <img src="./img/einaudi.jpeg" alt="Einaudi">
+                                <!-- Tasto play -->
+                                <span class="abs"><i class="fa-regular fa-circle-play"></i></span>
+                            </div>
+                            <h4 class="mb-10 bold">Ludovico Enaudi</h4>
+                        </div>
                     </div>
                 </div>
             </div>

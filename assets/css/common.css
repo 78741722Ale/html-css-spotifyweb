@@ -194,13 +194,22 @@
 }
 
 .album h4,
-.album_sm h4 {
+.album_sm h4,
+.album_sm_circle h4 {
   color: white;
   font-weight: bold;
 }
 
 .album span {
   color: rgba(134, 134, 134, 1);
+}
+
+.litegray {
+  color: rgba(134, 134, 134, 1);
+}
+
+.bold {
+  font-weight: bold;
 }
 
 /*#endregion */

@@ -1,4 +1,4 @@
-/* CONCLUSA - Major Update dei container */
+/* CONCLUSA */
 /*#region Generale */
 * {
   margin: 0;
@@ -16,6 +16,7 @@ body {
 }
 /*#endregion */
 
+/* CONCLUSA */
 /*#region Palette colori blocchi */
 :root {
   --MainColor: rgba(20, 25, 34, 1);
@@ -25,7 +26,7 @@ body {
 }
 /*#endregion */
 
-/* CONCLUSA - MAJOR UPDATE DELLE DIMENSIONI */
+/* CONCLUSA */
 /*#region dimensioni */
 
 /* Dimensioni principali del corpo */
@@ -56,6 +57,7 @@ body {
 }
 /*#endregion */
 
+/* CONCLUSA */
 /*#region Container principali  */
 
 /* Container dell'Aside */
@@ -118,7 +120,7 @@ footer {
 .Cards {
   width: var(--Cards_MW_set);
   height: max-content;
-  background-color: var(--MainColor); 
+  background-color: var(--MainColor);
 }
 
 /* Container della Singola Carta */
@@ -128,18 +130,26 @@ footer {
   text-align: center;
 }
 
-.album_sm {
+/* Album per seconda colonna */
+.album_sm,
+.album_sm_circle {
   width: calc(100% / 2);
   height: 100%;
   text-align: center;
 }
 
+/* Album per terza colonna */
+.album_sm_circle img {
+  border-radius: 50%;
+}
+
+/* Card */
 .Photo {
   position: relative;
   width: 95%;
   height: 75%;
 }
-
+/* Immagine nella card */
 .Photo img {
   background-size: cover;
   width: 100%;
@@ -147,17 +157,17 @@ footer {
   height: 100%;
   transition: 15ms linear;
 }
-
+/* Tasto Play */
 .Photo i {
   font-size: 60px;
-  color: transparent;
+  color: white;
   transition: 10ms linear;
 }
-
-/* .Photo span {
+/* Regola per l'hover sul tasto play */
+.Photo span {
   visibility: hidden;
   transition: 10ms linear;
-} */
+}
 
 /* Cont del footer */
 .status {
@@ -193,9 +203,6 @@ header a {
   text-decoration: none;
   color: white;
 }
-
-
-
 /*#endregion*/
 
 /* CONCLUSA */
@@ -210,6 +217,27 @@ header a {
 /* Container per la playlist */
 .play {
   height: 75%;
+}
+
+.account {
+  height: 75px;
+  position: absolute;
+  bottom: 0%;
+}
+
+.divider {
+  width: 85%;
+}
+
+/* Container per installazione app */
+.upper {
+  width: 100%;
+  height: 40%;
+}
+/* Container Accesso */
+.under {
+  width: 100%;
+  height: 60%;
 }
 
 .play_title,
@@ -236,12 +264,7 @@ header a {
 .new_play span {
   font-weight: bold;
 }
-.account {
-  height: 75px;
-  background-color: blue;
-  position: absolute;
-  bottom: 0%;
-}
+
 .main_sidebar {
   width: var(--Main_Side_MW_set);
 }
@@ -365,6 +388,7 @@ header a {
 
 /*#endregion Footer */
 
+/* DA CONCLUDERE */
 /*#region HOVER sui contenuti  */
 
 /* Sidebar Laterale */
@@ -389,13 +413,13 @@ header a {
 }
 
 /* Hover delle foto Album */
-.Photo img:hover {
+.Photo:hover img {
   filter: brightness(50%);
 }
-.Photo i:hover {
+.Photo:hover i {
   color: white;
   z-index: 1;
-} 
+}
 
 /* Playlist della Sidebar */
 .names_play a {
@@ -405,10 +429,13 @@ header a {
 .names_play a:hover {
   color: white;
 }
-
 .new_play i:hover,
-.new_play span:hover
-{
+.new_play span:hover {
+  color: white;
+}
+
+.upper i:hover,
+.upper a:hover {
   color: white;
 }
 
@@ -419,7 +446,7 @@ header a:hover {
 
 /* Footer */
 
-/* icone a SX */
+/* Icone di SX */
 .track_name span:hover {
   text-decoration: underline;
 }
@@ -429,12 +456,12 @@ header a:hover {
 }
 
 /* Icone a DX */
-.enter_icons a:hover{
+.enter_icons a:hover {
   transform: scale(1.25);
 }
 
 /* Player con barra regolazione minuti */
-.player a:hover{
+.player a:hover {
   transform: scale(1.25);
 }
 
