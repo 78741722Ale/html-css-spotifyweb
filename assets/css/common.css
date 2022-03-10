@@ -1,3 +1,5 @@
+/* Nessun errore rilevato a Validator */
+
 /*#region common utilities per il flex  */
 /* Regola in comune per il flex */
 
@@ -214,6 +216,10 @@
 
 /*#endregion */
 
+/*#region - Regola da verificare  */
+/* Regola poco chiara */
 main {
   overflow-y: auto;
 }
+
+/*#endregion */
