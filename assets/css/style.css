@@ -262,7 +262,7 @@ header a {
 }
 /*#endregion*/
 
-/* DA CONCLUDERE */
+/* CONCLUSA */
 /*#region Main content */
 
 .navbar {
@@ -272,7 +272,7 @@ header a {
 
 /*#endregion*/
 
-/* DA CONCLUDERE - SISTEMARE INPUT VOLUME E STATO TRACCIA */
+/* CONCLUSA */
 /*#region Footer */
 
 /*#region Track - a Sinistra del Footer */
@@ -371,7 +371,7 @@ header a {
 
 /*#endregion Footer */
 
-/* DA CONCLUDERE */
+/* CONCLUSA */
 /*#region HOVER sui contenuti  */
 
 /* Sidebar Laterale */
@@ -441,30 +441,10 @@ header a:hover {
 }
 /*#endregion*/
 
-/*#region Media Queries 1200px - Xl  */
+/* CONCLUSA */
+/*#region Media Queries 1200px to 1920px - Lg  */
 
-@media screen and (min-width: 1440px) and (max-width: 1920px) {
-
-  .content_cards {
-    width: 100%;
-    height: max-content;
-    align-items: flex-start;
-    margin-bottom: 20px;
-  }
-
-  .content_cards_sm {
-    height: 0%;
-    justify-content: flex-start;
-    margin-bottom: 20px;
-  }
-
-
-
-}
-
-
-
-@media screen and (min-width: 1200px) and (max-width: 1440px)  {
+@media screen and (min-width: 1200px) and (max-width: 1920px) {
   /* Media per l'header e il call to action */
   header a {
     transform: scale(0.85);
@@ -475,11 +455,10 @@ header a:hover {
   }
   /* Navbar */
   .navbar {
+    width: max-content;
     font-weight: 700;
     flex-wrap: nowrap;
-    width: var(--Navbar_MQ_set);
-    transform: scale(0.85);
-    margin-bottom: 0px;
+    transform: scale(0.8);
   }
 
   /*#region Aside  */
@@ -526,27 +505,25 @@ header a:hover {
     width: 100%;
     height: max-content;
     align-items: flex-start;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
-
   .content_cards_sm {
-    height: 0%;
+    height: max-content;
     justify-content: flex-start;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
-
+  
   .album {
     width: calc(100% / 6);
     height: calc(100% / 4);
     text-align: center;
   }
   .album_sm_circle,
-  .album_sm { 
+  .album_sm {
     width: calc(100% / 6);
     height: calc(100% / 2.5);
     text-align: center;
   }
-
   .album h4,
   .album_sm h4,
   .album_sm_circle h4 {
@@ -564,7 +541,11 @@ header a:hover {
     width: 100%;
     height: 100%;
   }
-  
+  .content_title {
+    width: 50%;
+    height: 60px;
+    margin-bottom: 15px;
+  }
   /*#endregion */
 
   /*#region Footer */
@@ -593,10 +574,12 @@ header a:hover {
 
   /*#endregion */
 }
+/*#endregion */
 
-/*#region Media Queries LG - 992px */
+/* CONCLUSA */
+/*#region Media Queries LG - 990px to 1199px */
 
-@media screen and (min-width: 990px) and (max-width: 1200px) {
+@media screen and (min-width: 990px) and (max-width: 1199px) {
   /* Media per l'header e il call to action */
   header a {
     transform: scale(0.8);
@@ -716,6 +699,184 @@ header a:hover {
     text-align: center;
   }
   /*#endregion */
+
+  /*#region Footer */
+  .track {
+    width: 200px;
+  }
+
+  .status {
+    width: 500px;
+  }
+
+  .enter {
+    width: 200px;
+  }
+
+  .enter_icons a {
+    font-size: 0.9rem;
+  }
+
+  .t_left,
+  .t_right {
+    width: 7%;
+    font-size: 0.7rem;
+    color: rgb(255, 255, 255);
+  }
+/*#endregion */
+
+}
+/*#endregion */
+
+/* CONCLUSA */
+/*#region Media Queries MD - 768 to 989px */
+
+@media screen and (min-width: 768px) and (max-width: 989px) {
+  /* Media per l'header e il call to action */
+ 
+  header a {
+    transform: scale(0.7);
+    margin-left: 25px;
+  }
+  /* Header */
+  header a:hover {
+    transform: scale(0.75);
+  }
+
+  /* Media per la navbar superiore */
+  :root {
+    --Wrapper_MQ_set: calc(100% - 200px);
+  }
+  .navbar {
+    font-weight: 700;
+    flex-wrap: nowrap;
+    width: max-content;
+    transform: scale(0.75);
+    margin-bottom: 0px;
+  }
+
+  /*#region Sidebar */
+
+  /* Sidebar */
+  aside {
+    width: var(--Aside_MQ_set);
+  }
+  :root {
+    --Aside_MQ_set: 140px;
+  }
+  .home,
+  .play {
+    padding-left: 15px;
+    font-size: 0.7rem;
+  }
+  .logo_img {
+    max-width: 75%;
+    width: auto;
+    height: 100%;
+  }
+  .home a,
+  .play a,
+  .play h4 {
+    padding-left: 0px;
+    text-transform: none;
+  }
+  .play h4 {
+    margin-bottom: 5px;
+  }
+  .content_title {
+    width: 50%;
+    height: 60px;
+    margin-bottom: 20px;
+  }
+  .divider {
+    width: 75%;
+    margin-left: 20px;
+  }
+  /*#endregion*/
+
+  /*#region Main */
+  /* Main */
+  main {
+    width: calc(100% - 140px);
+  }
+  main h4 {
+    font-size: 0.9rem;
+  }
+  .content_cards {
+    width: 100%;
+    align-items: flex-start;
+    margin-bottom: 40px;
+  }
+  .content_cards_sm {
+    height: 0%;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+  }
+  .album h4,
+  .album_sm h4,
+  .album_sm_circle h4 {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 5px;
+    width: 100%;
+  }
+
+  .Photo {
+    width: 95%;
+    height: 75%;
+  }
+
+  .Photo img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .album {
+    width: calc(100% / 3);
+    height: calc(100% / 5);
+    text-align: center;
+  }
+
+  .album_sm {
+    width: calc(100% / 3);
+    height: calc(100% / 2.5);
+    text-align: center;
+  }
+
+  .album_sm_circle {
+    width: calc(100% / 3);
+    height: calc(100% / 2.5);
+    text-align: center;
+  }
+  /*#endregion */
+
+  /*#region Footer */
+  .track {
+    width: 250px;
+  }
+  .status {
+    width: 500px;
+  }
+  .enter {
+    width: 200px;
+  }
+  .enter_icons a {
+    font-size: 0.9rem;
+  }
+  .t_left {
+    margin-right: 10px;
+  }
+  .t_right {
+    margin-left: 10px;
+  }
+  .t_left,
+  .t_right {
+    width: 7%;
+    font-size: 0.7rem;
+    color: rgb(255, 255, 255);
+  }
+/*#endregion */
+
 }
 /*#endregion */
 
