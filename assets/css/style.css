@@ -50,7 +50,7 @@ body {
 :root {
   --Logo_MW_set: 100%;
   --Logo_H_set: 80px;
-  --Navbar_MW_set: 65%;
+  --Navbar_MW_set: 75%;
   --Navbar_H_set: 50px;
   --Item_MW_set: 300px;
   --Item_H_set: 100%;
@@ -136,6 +136,7 @@ footer {
   width: calc(100% / 6);
   height: 100%;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 /* Album per terza colonna */
@@ -442,7 +443,7 @@ header a:hover {
 /*#endregion*/
 
 /* CONCLUSA */
-/*#region Media Queries 1200px to 1920px - Lg  */
+/*#region Media Queries 1200px to 1920px - XL  */
 
 @media screen and (min-width: 1200px) and (max-width: 1920px) {
   /* Media per l'header e il call to action */
@@ -512,7 +513,7 @@ header a:hover {
     justify-content: flex-start;
     margin-bottom: 20px;
   }
-  
+
   .album {
     width: calc(100% / 6);
     height: calc(100% / 4);
@@ -723,8 +724,7 @@ header a:hover {
     font-size: 0.7rem;
     color: rgb(255, 255, 255);
   }
-/*#endregion */
-
+  /*#endregion */
 }
 /*#endregion */
 
@@ -733,7 +733,7 @@ header a:hover {
 
 @media screen and (min-width: 768px) and (max-width: 989px) {
   /* Media per l'header e il call to action */
- 
+
   header a {
     transform: scale(0.7);
     margin-left: 25px;
@@ -875,10 +875,87 @@ header a:hover {
     font-size: 0.7rem;
     color: rgb(255, 255, 255);
   }
-/*#endregion */
-
+  /*#endregion */
 }
 /*#endregion */
 
+/* CONCLUSA */
+/*#region Media Queries Small - 600 to 767px  */
+@media screen and (min-width: 600px) and (max-width: 767px) {
+  /* Media per l'header e il call to action 
+  in questo caso invisibile*/
+  header a {
+    display: none;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  /*#region Sidebar  */
+  /* Sidebar */
+  :root {
+    --Aside_MQ_set: 100px;
+  }
+  aside {
+    width: var(--Aside_MQ_set);
+  }
+  .logo_img {
+    max-width: 80%;
+    height: 100%;
+    margin-right: 5px;
+  }
+  .home,
+  .play,
+  .account {
+    display: none;
+  }
+  /*#endregion */
+
+  /*#region Main  */
+  main {
+    width: calc(100% - 100px);
+  }
+  .album {
+    width: calc(100% / 2);
+    height: calc(100% / 5);
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .album_sm,
+  .album_sm_circle {
+    width: calc(100% / 2);
+    height: calc(100% / 2.5);
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .content_title {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 30px;
+    margin-top: 10px;
+  }
+  .content_cards_sm {
+    width: 100%;
+    height: max-content;
+  }
+  /*#endregion */
+
+  /*#region Footer */
+  .track {
+    display: none;
+  }
+
+  .status {
+    width: 650px;
+  }
+  .enter {
+    display: none;
+  }
+  /*#endregion */
+}
+
+/*#endregion  */
 
 /*#endregion  */
